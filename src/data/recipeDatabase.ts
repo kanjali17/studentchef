@@ -57,12 +57,17 @@ export const recipeDatabase: Recipe[] = [
       'Oil for frying'
     ],
     instructions: [
-      'Marinate chicken in pickle juice (30 min–overnight)',
-      'Mix flour & spices',
-      'Dip chicken in milk, then dredge in flour mix',
-      'Fry ~4 min/side',
-      'Toast buns',
-      'Assemble with mayo and pickles'
+      'Pound chicken breasts to an even thickness (about 1/2 inch) using a meat mallet or rolling pin.',
+      'Place chicken in a shallow dish and pour pickle juice over it. Marinate for at least 30 minutes, or overnight in the refrigerator.',
+      'In a shallow dish, combine flour, breadcrumbs, paprika, garlic powder, cayenne, salt, and pepper.',
+      'In another shallow dish, whisk together milk and egg.',
+      'Heat oil in a large skillet to 350°F (175°C) over medium-high heat.',
+      'Remove chicken from pickle juice and pat dry with paper towels.',
+      'Dip each chicken breast in the milk mixture, then dredge in the flour mixture, pressing to coat evenly.',
+      'Carefully place chicken in hot oil and fry for 3-4 minutes per side, until golden brown and cooked through (internal temperature 165°F/74°C).',
+      'Remove chicken and drain on paper towels for 2-3 minutes.',
+      'Toast hamburger buns in a dry skillet or toaster until lightly golden.',
+      'Spread mayo on both bun halves, place chicken on bottom bun, add pickle slices, and close sandwich.'
     ],
     tips: [
       'Chill breaded chicken before frying for better crisp',
@@ -100,9 +105,16 @@ export const recipeDatabase: Recipe[] = [
       'Garlic powder'
     ],
     instructions: [
-      'Marinate chicken in pickle juice',
-      'Dip in egg & milk, then flour',
-      'Fry until golden'
+      'Cut chicken breast into 1-inch chunks and place in a shallow dish.',
+      'Pour pickle juice over chicken chunks and marinate for at least 30 minutes in the refrigerator.',
+      'In a small bowl, whisk together egg and milk.',
+      'In a separate shallow dish, combine flour, paprika, garlic powder, salt, and pepper.',
+      'Heat 2-3 inches of oil in a deep pot or skillet to 350°F (175°C).',
+      'Remove chicken from pickle juice and pat dry with paper towels.',
+      'Dip each chicken chunk in the egg mixture, then dredge in the flour mixture to coat completely.',
+      'Fry chicken in batches for 3-4 minutes, or until golden brown and cooked through. Do not overcrowd the pot.',
+      'Remove with a slotted spoon and drain on paper towels.',
+      'Serve hot with your favorite dipping sauce.'
     ],
     tips: [
       'Serve with CFA sauce (mayo + BBQ + honey + mustard)',
@@ -137,9 +149,12 @@ export const recipeDatabase: Recipe[] = [
       'Parmesan'
     ],
     instructions: [
-      'Cook pasta',
-      'Melt butter, whisk in milk and cheese',
-      'Mix with pasta, bake if desired'
+      'Bring a large pot of salted water to a boil. Cook the macaroni from the boxed mac & cheese according to package directions (usually 7-8 minutes) until al dente.',
+      'While the pasta cooks, steam the broccoli florets in a steamer basket or microwave for 3-4 minutes until tender-crisp.',
+      'Drain the pasta and return it to the pot. Add the milk, butter, and cheese powder from the box, stirring until creamy.',
+      'Add the steamed broccoli and cooked chicken or tofu to the mac & cheese, stirring gently to combine.',
+      'Transfer to a serving bowl and top with breadcrumbs for crunch.',
+      'Drizzle with hot sauce to taste and serve immediately while hot and creamy.'
     ],
     tips: [
       'Top with breadcrumbs',
@@ -177,9 +192,14 @@ export const recipeDatabase: Recipe[] = [
       'Sauce'
     ],
     instructions: [
-      'Cook patties',
-      'Toast buns',
-      'Stack with lettuce, cheese, pickles, onion, and sauce'
+      'To make the special sauce, combine mayonnaise, French dressing, sweet pickle relish, minced onion, sugar, white vinegar, and a pinch of salt in a small bowl. Mix well and set aside.',
+      'Divide ground beef into 8 thin patties (about 2 oz each). Season both sides with salt and pepper.',
+      'Heat a griddle or large skillet over medium-high heat. Cook the beef patties for 1-2 minutes per side, until cooked through.',
+      'During the last 30 seconds of cooking, place a slice of American cheese on each patty to melt.',
+      'Toast the hamburger buns in the same skillet until lightly golden.',
+      'To assemble each Big Mac: On the bottom bun, spread special sauce, add shredded lettuce, diced onion, pickle slices, a cheese-covered patty, and the middle bun.',
+      'On the middle bun, add more special sauce, lettuce, onion, pickles, and the second cheese-covered patty.',
+      'Top with the sesame seed bun. Repeat for remaining burgers.'
     ],
     tips: [
       'Special Sauce = mayo + relish + ketchup + mustard',
@@ -625,12 +645,14 @@ export const recipeDatabase: Recipe[] = [
       '1 scoop vanilla protein powder (optional)'
     ],
     instructions: [
-      'Fill a cup with ice (we want it extra cold!)',
-      'Pour in the White Cran-Strawberry juice',
-      'Add the coconut milk and stir gently',
-      'Add strawberries on top',
-      'Optional: add a few drops of green coffee extract for caffeine',
-      'Optional: add protein powder for extra nutrition'
+      'Fill a tall glass (16-20 oz) with ice cubes, filling it about 3/4 full.',
+      'Pour the White Cran-Strawberry juice over the ice, filling about 2/3 of the glass.',
+      'Slowly pour the sweetened coconut milk over the juice. The coconut milk will create a beautiful layered effect.',
+      'Gently stir the mixture with a long spoon to combine the juices while maintaining the pink color.',
+      'Top with fresh or freeze-dried strawberries, arranging them attractively on the surface.',
+      'If using green coffee bean extract, add 2-3 drops and stir gently.',
+      'If adding protein powder, sprinkle it on top and stir until dissolved.',
+      'Serve immediately with a straw for the authentic Starbucks experience.'
     ],
     tips: [
       'Use freeze-dried strawberries for better shelf life',
@@ -674,10 +696,14 @@ export const recipeDatabase: Recipe[] = [
       'Whipped cream & caramel drizzle (for topping)'
     ],
     instructions: [
-      'Blend coffee, milk, caramel sauce, sugar, protein powder, and ice until smooth',
-      'Pour into a tall glass',
-      'Top with whipped cream',
-      'Drizzle more caramel on top'
+      'In a high-powered blender, combine the chilled coffee, milk, caramel sauce, sugar (if using), and vanilla protein powder.',
+      'Blend on low speed for 10-15 seconds until the sugar and protein powder are fully dissolved.',
+      'Add the ice cubes and blend on high speed for 30-45 seconds, until the mixture is smooth and thick like a milkshake.',
+      'If the mixture is too thick, add a splash of milk. If too thin, add more ice and blend again.',
+      'Pour the frappuccino into a tall glass (16-20 oz), leaving about 1 inch of space at the top.',
+      'Top with a generous dollop of whipped cream, covering the entire surface.',
+      'Drizzle additional caramel sauce over the whipped cream in a decorative pattern.',
+      'Serve immediately with a straw and enjoy the creamy, caramel goodness!'
     ],
     tips: [
       'Use cold brew for smoother taste',
@@ -723,11 +749,15 @@ export const recipeDatabase: Recipe[] = [
       'Cinnamon for garnish'
     ],
     instructions: [
-      'In a small pot, heat milk, pumpkin purée, maple syrup, and spices over medium heat',
-      'Stir until hot and frothy (don\'t boil)',
-      'Add vanilla extract and protein powder',
-      'Pour over brewed coffee or espresso',
-      'Top with whipped cream and a sprinkle of pumpkin spice'
+      'In a small saucepan, combine the milk, pumpkin purée, maple syrup, and pumpkin pie spice.',
+      'Heat over medium heat, whisking constantly, until the mixture is hot and frothy (about 3-4 minutes). Do not let it boil.',
+      'Remove from heat and whisk in the vanilla extract.',
+      'Add the vanilla protein powder and whisk vigorously until fully dissolved and smooth.',
+      'Brew your espresso or strong coffee separately.',
+      'Pour the hot coffee into a large mug (12-16 oz).',
+      'Slowly pour the pumpkin milk mixture over the coffee, stirring gently to combine.',
+      'Top with whipped cream if desired, and sprinkle with additional pumpkin pie spice or cinnamon for garnish.',
+      'Serve immediately while hot and enjoy the cozy fall flavors!'
     ],
     tips: [
       'Use real pumpkin purée, not pie filling',
@@ -1186,11 +1216,12 @@ export const recipeDatabase: Recipe[] = [
       'Hot sauce'
     ],
     instructions: [
-      'Cook mac & cheese according to package directions',
-      'Steam broccoli until tender',
-      'Add cooked chicken/tofu and broccoli to mac & cheese',
-      'Top with breadcrumbs and hot sauce',
-      'Serve hot and enjoy!'
+      'Bring a large pot of salted water to a boil. Cook the macaroni from the boxed mac & cheese according to package directions (usually 7-8 minutes) until al dente.',
+      'While the pasta cooks, steam the broccoli florets in a steamer basket or microwave for 3-4 minutes until tender-crisp.',
+      'Drain the pasta and return it to the pot. Add the milk, butter, and cheese powder from the box, stirring until creamy.',
+      'Add the steamed broccoli and cooked chicken or tofu to the mac & cheese, stirring gently to combine.',
+      'Transfer to a serving bowl and top with breadcrumbs for crunch.',
+      'Drizzle with hot sauce to taste and serve immediately while hot and creamy.'
     ],
     tips: [
       'Use leftover rotisserie chicken for convenience',
@@ -1229,11 +1260,14 @@ export const recipeDatabase: Recipe[] = [
       'Red pepper flakes (optional)'
     ],
     instructions: [
-      'Boil water and cook ramen noodles according to package',
-      'In a separate pot, soft-boil the egg (6-7 minutes)',
-      'Add frozen vegetables to ramen in last 2 minutes of cooking',
-      'Add cooked chicken/tofu to warm through',
-      'Transfer to bowl, top with egg, green onions, and seasonings'
+      'Bring a medium pot of water to a boil. Add the ramen noodles and cook according to package directions (usually 3-4 minutes).',
+      'While the noodles cook, bring a small pot of water to a gentle boil. Carefully add the egg and cook for exactly 6-7 minutes for a soft-boiled egg with a runny yolk.',
+      'In the last 2 minutes of cooking the noodles, add the frozen mixed vegetables to the same pot.',
+      'Drain the noodles and vegetables, reserving about 1/2 cup of the cooking water.',
+      'Return the noodles and vegetables to the pot. Add the cooked chicken or tofu and warm through for 1 minute.',
+      'Stir in the soy sauce and sesame oil, adding a splash of the reserved cooking water if needed for moisture.',
+      'Transfer to a serving bowl. Peel and halve the soft-boiled egg, placing it on top.',
+      'Garnish with sliced green onions and red pepper flakes if desired. Serve immediately.'
     ],
     tips: [
       'Don\'t use the seasoning packet - it\'s too salty',

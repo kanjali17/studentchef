@@ -259,12 +259,12 @@ const IngredientUpgradesPage: React.FC = () => {
                         Upgrades:
                       </Text>
                       <Flex wrap="wrap" gap={1}>
-                        {recipe.upgrades.slice(0, 2).map((upgrade, idx) => (
+                        {recipe.upgrades?.slice(0, 2).map((upgrade: string, idx: number) => (
                           <Badge key={idx} colorScheme="green" variant="subtle" fontSize="xs">
                             {upgrade}
                           </Badge>
                         ))}
-                        {recipe.upgrades.length > 2 && (
+                        {recipe.upgrades && recipe.upgrades.length > 2 && (
                           <Badge colorScheme="green" variant="subtle" fontSize="xs">
                             +{recipe.upgrades.length - 2} more
                           </Badge>

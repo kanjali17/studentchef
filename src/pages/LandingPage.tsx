@@ -69,6 +69,7 @@ const LandingPage = () => {
       description: 'Host the best parties with our easy-to-scale recipes and portion guides!',
       examples: ['Guest Calculator', 'Dietary Preferences', 'Portions'],
       color: 'purple',
+      to: '/party-planning',
     },
   ];
 
