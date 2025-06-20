@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   Box,
   VStack,
@@ -20,8 +20,6 @@ import {
   ModalCloseButton,
   useDisclosure,
   Container,
-  Flex,
-  Image,
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import {
