@@ -1204,6 +1204,1502 @@ export const recipeDatabase: Recipe[] = [
       carbs: 43,
       fiber: 2
     }
+  },
+  // INGREDIENT UPGRADES - RAMEN
+  {
+    id: 'gourmet-ramen',
+    name: 'Gourmet Ramen Bowl',
+    description: 'Transform instant ramen into a restaurant-worthy meal',
+    time: '12 min',
+    difficulty: 'Easy',
+    cost: '$2.50',
+    rating: 5,
+    image: '🍜',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Ramen Noodles',
+    upgrades: ['Add protein', 'Fresh vegetables', 'Soft-boiled egg', 'Green onions'],
+    ingredients: [
+      '1 package instant ramen',
+      '1 egg',
+      '1/4 cup frozen mixed vegetables',
+      '1/4 cup cooked chicken or tofu',
+      '1 green onion, sliced',
+      '1 tbsp soy sauce',
+      '1/2 tsp sesame oil',
+      'Red pepper flakes (optional)'
+    ],
+    instructions: [
+      'Boil water and cook ramen noodles according to package',
+      'In a separate pot, soft-boil the egg (6-7 minutes)',
+      'Add frozen vegetables to ramen in last 2 minutes of cooking',
+      'Add cooked chicken/tofu to warm through',
+      'Transfer to bowl, top with egg, green onions, and seasonings'
+    ],
+    tips: [
+      'Don\'t use the seasoning packet - it\'s too salty',
+      'Add a splash of rice vinegar for brightness',
+      'Use leftover protein for convenience'
+    ],
+    nutrition: {
+      calories: 380,
+      protein: 22,
+      fat: 12,
+      carbs: 45,
+      fiber: 4
+    }
+  },
+  {
+    id: 'protein-ramen',
+    name: 'Protein-Packed Ramen',
+    description: 'High-protein ramen with multiple protein sources',
+    time: '15 min',
+    difficulty: 'Easy',
+    cost: '$3',
+    rating: 4,
+    image: '🍜',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Ramen Noodles',
+    upgrades: ['Multiple proteins', 'High protein', 'Vegetables', 'Healthy fats'],
+    ingredients: [
+      '1 package instant ramen',
+      '1/2 cup cooked chicken breast',
+      '1/4 cup edamame',
+      '1 egg',
+      '1/4 cup spinach',
+      '1 tbsp peanut butter',
+      '1 tbsp soy sauce',
+      '1 tsp sesame oil'
+    ],
+    instructions: [
+      'Cook ramen noodles according to package',
+      'Add spinach and edamame in last minute of cooking',
+      'Stir in peanut butter and soy sauce',
+      'Top with cooked chicken and soft-boiled egg',
+      'Drizzle with sesame oil and serve'
+    ],
+    tips: [
+      'Use natural peanut butter for better nutrition',
+      'Add more vegetables for extra fiber',
+      'Adjust protein amounts based on your needs'
+    ],
+    nutrition: {
+      calories: 420,
+      protein: 35,
+      fat: 16,
+      carbs: 42,
+      fiber: 5
+    }
+  },
+  // INGREDIENT UPGRADES - RICE
+  {
+    id: 'protein-fried-rice',
+    name: 'Protein Fried Rice',
+    description: 'Transform plain rice into a protein-packed fried rice',
+    time: '15 min',
+    difficulty: 'Easy',
+    cost: '$3',
+    rating: 5,
+    image: '🍚',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Rice',
+    upgrades: ['High protein', 'Vegetables', 'Healthy fats', 'Fiber'],
+    ingredients: [
+      '2 cups cooked rice',
+      '2 eggs',
+      '1/2 cup frozen mixed vegetables',
+      '2 tbsp soy sauce',
+      '1 tbsp sesame oil',
+      '2 green onions, chopped',
+      '1 clove garlic, minced',
+      '1 tbsp ginger, minced'
+    ],
+    instructions: [
+      'Scramble eggs in a large pan and set aside',
+      'Sauté garlic and ginger in sesame oil',
+      'Add vegetables and cook until tender',
+      'Add rice and stir-fry for 2-3 minutes',
+      'Add eggs, soy sauce, and green onions',
+      'Stir-fry for another 2 minutes'
+    ],
+    tips: [
+      'Use day-old rice for better texture',
+      'Add any protein you have (chicken, shrimp, tofu)',
+      'Use low-sodium soy sauce if watching salt'
+    ],
+    nutrition: {
+      calories: 380,
+      protein: 16,
+      fat: 12,
+      carbs: 52,
+      fiber: 4
+    }
+  },
+  {
+    id: 'indian-lemon-rice',
+    name: 'Indian Lemon Rice',
+    description: 'Aromatic and tangy Indian-style rice',
+    time: '20 min',
+    difficulty: 'Easy',
+    cost: '$2.50',
+    rating: 4,
+    image: '🍚',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Rice',
+    upgrades: ['High protein', 'Spices', 'Healthy fats', 'Fiber'],
+    ingredients: [
+      '2 cups cooked rice',
+      '1/4 cup peanuts',
+      '2 tbsp vegetable oil',
+      '1 tsp mustard seeds',
+      '1 tsp cumin seeds',
+      '2 dried red chilies',
+      '1/4 cup curry leaves',
+      '2 tbsp lemon juice',
+      '1/2 tsp turmeric',
+      'Salt to taste'
+    ],
+    instructions: [
+      'Heat oil in a pan over medium heat',
+      'Add mustard seeds, cumin seeds, and chilies',
+      'When seeds pop, add curry leaves and peanuts',
+      'Add turmeric and stir for 30 seconds',
+      'Add rice and lemon juice',
+      'Stir gently until well combined',
+      'Season with salt and serve'
+    ],
+    tips: [
+      'Use basmati rice for authentic flavor',
+      'Add more vegetables like peas or carrots',
+      'Adjust spice level to your preference'
+    ],
+    nutrition: {
+      calories: 320,
+      protein: 8,
+      fat: 14,
+      carbs: 44,
+      fiber: 3
+    }
+  },
+  {
+    id: 'rice-bowl',
+    name: 'Protein Rice Bowl',
+    description: 'Build-your-own protein rice bowl',
+    time: '12 min',
+    difficulty: 'Easy',
+    cost: '$3.50',
+    rating: 5,
+    image: '🍚',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Rice',
+    upgrades: ['High protein', 'Vegetables', 'Healthy fats', 'Fiber'],
+    ingredients: [
+      '1 cup cooked rice',
+      '1/2 cup black beans',
+      '1/4 cup corn',
+      '1/4 cup diced tomatoes',
+      '1/4 cup diced avocado',
+      '2 tbsp Greek yogurt',
+      '1 tbsp lime juice',
+      '1 tbsp olive oil',
+      'Cilantro for garnish',
+      'Salt and pepper to taste'
+    ],
+    instructions: [
+      'Warm rice in microwave or pan',
+      'Layer rice in a bowl',
+      'Add beans, corn, and tomatoes',
+      'Top with avocado and Greek yogurt',
+      'Drizzle with lime juice and olive oil',
+      'Garnish with cilantro and season'
+    ],
+    tips: [
+      'Use any type of beans you have',
+      'Add leftover protein for extra nutrition',
+      'Try different sauces like hot sauce or salsa'
+    ],
+    nutrition: {
+      calories: 420,
+      protein: 18,
+      fat: 16,
+      carbs: 52,
+      fiber: 8
+    }
+  },
+  {
+    id: 'rice-pudding',
+    name: 'Protein Rice Pudding',
+    description: 'Creamy protein-rich rice pudding',
+    time: '30 min',
+    difficulty: 'Easy',
+    cost: '$2.50',
+    rating: 4,
+    image: '🍚',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Rice',
+    upgrades: ['High protein', 'Protein powder', 'Fruit', 'Healthy fats'],
+    ingredients: [
+      '1 cup cooked rice',
+      '1 cup milk',
+      '1 scoop vanilla protein powder',
+      '1/4 cup raisins',
+      '2 tbsp honey',
+      '1 tsp cinnamon',
+      '1 tbsp butter',
+      '1/4 cup chopped nuts'
+    ],
+    instructions: [
+      'Combine rice and milk in a saucepan',
+      'Cook over medium heat, stirring frequently',
+      'Add protein powder and stir until dissolved',
+      'Add raisins, honey, and cinnamon',
+      'Cook until thickened, about 15 minutes',
+      'Stir in butter and top with nuts'
+    ],
+    tips: [
+      'Use any type of rice you have',
+      'Add different fruits like berries or bananas',
+      'Serve warm or cold'
+    ],
+    nutrition: {
+      calories: 380,
+      protein: 22,
+      fat: 12,
+      carbs: 48,
+      fiber: 3
+    }
+  },
+  // INGREDIENT UPGRADES - EGGS
+  {
+    id: 'protein-omelette',
+    name: 'Protein Omelette',
+    description: 'Transform eggs into a protein-packed omelette',
+    time: '10 min',
+    difficulty: 'Easy',
+    cost: '$2.50',
+    rating: 5,
+    image: '🥚',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Eggs',
+    upgrades: ['High protein', 'Vegetables', 'Healthy fats', 'Fiber'],
+    ingredients: [
+      '3 eggs',
+      '1/4 cup diced bell pepper',
+      '1/4 cup diced onion',
+      '1/4 cup shredded cheese',
+      '1 tbsp olive oil',
+      '1 tbsp milk',
+      'Salt and pepper to taste'
+    ],
+    instructions: [
+      'Whisk eggs with milk, salt, and pepper',
+      'Heat olive oil in a non-stick pan over medium heat',
+      'Sauté vegetables for 2-3 minutes',
+      'Pour egg mixture over vegetables',
+      'When edges start to set, add cheese',
+      'Fold omelette in half and cook until done'
+    ],
+    tips: [
+      'Use any vegetables you have',
+      'Add leftover protein for extra nutrition',
+      'Don\'t over-stir the eggs'
+    ],
+    nutrition: {
+      calories: 320,
+      protein: 24,
+      fat: 22,
+      carbs: 4,
+      fiber: 2
+    }
+  },
+  {
+    id: 'egg-fried-rice',
+    name: 'Egg Fried Rice',
+    description: 'Classic egg fried rice with protein boost',
+    time: '12 min',
+    difficulty: 'Easy',
+    cost: '$2',
+    rating: 5,
+    image: '🥚',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Eggs',
+    upgrades: ['High protein', 'Vegetables', 'Healthy fats', 'Fiber'],
+    ingredients: [
+      '2 cups cooked rice',
+      '3 eggs',
+      '1/2 cup frozen mixed vegetables',
+      '2 tbsp soy sauce',
+      '1 tbsp sesame oil',
+      '2 green onions, chopped',
+      '1 clove garlic, minced',
+      '1 tbsp ginger, minced'
+    ],
+    instructions: [
+      'Scramble eggs in a large pan and set aside',
+      'Sauté garlic and ginger in sesame oil',
+      'Add vegetables and cook until tender',
+      'Add rice and stir-fry for 2-3 minutes',
+      'Add eggs, soy sauce, and green onions',
+      'Stir-fry for another 2 minutes'
+    ],
+    tips: [
+      'Use day-old rice for better texture',
+      'Add any protein you have (chicken, shrimp, tofu)',
+      'Use low-sodium soy sauce if watching salt'
+    ],
+    nutrition: {
+      calories: 380,
+      protein: 18,
+      fat: 14,
+      carbs: 52,
+      fiber: 4
+    }
+  },
+  {
+    id: 'egg-sandwich',
+    name: 'Protein Egg Sandwich',
+    description: 'Protein-rich egg sandwich with vegetables',
+    time: '8 min',
+    difficulty: 'Easy',
+    cost: '$2.50',
+    rating: 4,
+    image: '🥚',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Eggs',
+    upgrades: ['High protein', 'Vegetables', 'Healthy fats', 'Fiber'],
+    ingredients: [
+      '2 slices whole grain bread',
+      '2 eggs',
+      '1 slice cheese',
+      '1/4 cup spinach',
+      '1/4 cup sliced tomato',
+      '1 tbsp butter',
+      '1 tbsp mayonnaise',
+      'Salt and pepper to taste'
+    ],
+    instructions: [
+      'Toast bread until golden brown',
+      'Fry eggs to your preference',
+      'Layer spinach, eggs, cheese, and tomato on bread',
+      'Spread mayonnaise on other slice',
+      'Assemble sandwich and season'
+    ],
+    tips: [
+      'Use any type of bread you have',
+      'Add avocado for extra healthy fats',
+      'Try different cheeses for variety'
+    ],
+    nutrition: {
+      calories: 420,
+      protein: 22,
+      fat: 24,
+      carbs: 28,
+      fiber: 4
+    }
+  },
+  {
+    id: 'egg-soup',
+    name: 'Egg Drop Soup',
+    description: 'Simple and protein-rich egg drop soup',
+    time: '10 min',
+    difficulty: 'Easy',
+    cost: '$1.50',
+    rating: 4,
+    image: '🥚',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Eggs',
+    upgrades: ['High protein', 'Vegetables', 'Healthy fats', 'Fiber'],
+    ingredients: [
+      '2 cups chicken broth',
+      '2 eggs',
+      '1/4 cup frozen peas',
+      '1/4 cup diced carrots',
+      '2 green onions, chopped',
+      '1 tbsp soy sauce',
+      '1 tsp sesame oil',
+      '1 tbsp cornstarch',
+      'Salt and pepper to taste'
+    ],
+    instructions: [
+      'Bring broth to a boil in a pot',
+      'Add vegetables and simmer for 3 minutes',
+      'Whisk eggs in a bowl',
+      'Slowly pour eggs into soup while stirring',
+      'Mix cornstarch with water and add to thicken',
+      'Season with soy sauce, sesame oil, salt, and pepper'
+    ],
+    tips: [
+      'Use vegetable broth for vegetarian version',
+      'Add more vegetables for extra nutrition',
+      'Adjust seasoning to your preference'
+    ],
+    nutrition: {
+      calories: 180,
+      protein: 16,
+      fat: 8,
+      carbs: 12,
+      fiber: 2
+    }
+  },
+  // INGREDIENT UPGRADES - PASTA
+  {
+    id: 'protein-pasta-salad',
+    name: 'Protein Pasta Salad',
+    description: 'Transform pasta into a protein-rich cold salad',
+    time: '15 min',
+    difficulty: 'Easy',
+    cost: '$3',
+    rating: 4,
+    image: '🍝',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Pasta',
+    upgrades: ['High protein', 'Vegetables', 'Healthy fats', 'Fiber'],
+    ingredients: [
+      '2 cups cooked pasta',
+      '1/2 cup diced chicken breast',
+      '1/4 cup cherry tomatoes',
+      '1/4 cup diced cucumber',
+      '1/4 cup diced bell pepper',
+      '2 tbsp olive oil',
+      '1 tbsp balsamic vinegar',
+      '1/4 cup feta cheese',
+      'Fresh basil',
+      'Salt and pepper to taste'
+    ],
+    instructions: [
+      'Cook pasta according to package directions',
+      'Drain and rinse with cold water',
+      'Combine pasta with all vegetables',
+      'Add chicken and feta cheese',
+      'Drizzle with olive oil and balsamic',
+      'Season with salt, pepper, and basil'
+    ],
+    tips: [
+      'Use any type of pasta you have',
+      'Add any vegetables you like',
+      'Can be made ahead and stored in fridge'
+    ],
+    nutrition: {
+      calories: 420,
+      protein: 24,
+      fat: 16,
+      carbs: 48,
+      fiber: 4
+    }
+  },
+  {
+    id: 'pasta-stir-fry',
+    name: 'Pasta Stir-Fry',
+    description: 'Asian-inspired pasta stir-fry with protein',
+    time: '12 min',
+    difficulty: 'Easy',
+    cost: '$3.50',
+    rating: 5,
+    image: '🍝',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Pasta',
+    upgrades: ['High protein', 'Vegetables', 'Healthy fats', 'Fiber'],
+    ingredients: [
+      '2 cups cooked pasta',
+      '2 eggs',
+      '1/2 cup frozen mixed vegetables',
+      '2 tbsp soy sauce',
+      '1 tbsp sesame oil',
+      '2 green onions, chopped',
+      '1 clove garlic, minced',
+      '1 tbsp ginger, minced',
+      '1 tbsp sesame seeds'
+    ],
+    instructions: [
+      'Scramble eggs in a large pan and set aside',
+      'Sauté garlic and ginger in sesame oil',
+      'Add vegetables and cook until tender',
+      'Add pasta and stir-fry for 2-3 minutes',
+      'Add eggs, soy sauce, and green onions',
+      'Stir-fry for another 2 minutes',
+      'Top with sesame seeds'
+    ],
+    tips: [
+      'Use any type of pasta you have',
+      'Add tofu or chicken for extra protein',
+      'Use low-sodium soy sauce if watching salt'
+    ],
+    nutrition: {
+      calories: 380,
+      protein: 18,
+      fat: 14,
+      carbs: 52,
+      fiber: 4
+    }
+  },
+  {
+    id: 'pasta-soup',
+    name: 'Pasta Soup',
+    description: 'Hearty pasta soup with protein and vegetables',
+    time: '20 min',
+    difficulty: 'Easy',
+    cost: '$2.50',
+    rating: 4,
+    image: '🍝',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Pasta',
+    upgrades: ['High protein', 'Vegetables', 'Healthy fats', 'Fiber'],
+    ingredients: [
+      '1 cup cooked pasta',
+      '2 cups chicken broth',
+      '1/2 cup diced chicken breast',
+      '1/4 cup frozen peas',
+      '1/4 cup diced carrots',
+      '1/4 cup diced celery',
+      '1 tbsp olive oil',
+      '1 clove garlic, minced',
+      '1 tsp Italian seasoning',
+      'Salt and pepper to taste'
+    ],
+    instructions: [
+      'Heat olive oil in a pot over medium heat',
+      'Sauté garlic, carrots, and celery for 3 minutes',
+      'Add broth and bring to a boil',
+      'Add pasta, chicken, and peas',
+      'Simmer for 5 minutes',
+      'Season with Italian seasoning, salt, and pepper'
+    ],
+    tips: [
+      'Use any type of pasta you have',
+      'Add more vegetables for extra nutrition',
+      'Use vegetable broth for vegetarian version'
+    ],
+    nutrition: {
+      calories: 320,
+      protein: 20,
+      fat: 8,
+      carbs: 44,
+      fiber: 4
+    }
+  },
+  {
+    id: 'pasta-frittata',
+    name: 'Pasta Frittata',
+    description: 'Transform leftover pasta into a protein-rich frittata',
+    time: '15 min',
+    difficulty: 'Easy',
+    cost: '$2.50',
+    rating: 4,
+    image: '🍝',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Pasta',
+    upgrades: ['High protein', 'Vegetables', 'Healthy fats', 'Fiber'],
+    ingredients: [
+      '1 cup cooked pasta',
+      '4 eggs',
+      '1/4 cup diced bell pepper',
+      '1/4 cup diced onion',
+      '1/4 cup shredded cheese',
+      '1 tbsp olive oil',
+      '1 tbsp milk',
+      'Salt and pepper to taste'
+    ],
+    instructions: [
+      'Preheat oven to 350°F',
+      'Whisk eggs with milk, salt, and pepper',
+      'Heat olive oil in an oven-safe pan',
+      'Sauté onion and bell pepper for 3 minutes',
+      'Add pasta and stir to combine',
+      'Pour egg mixture over pasta',
+      'Sprinkle with cheese',
+      'Bake for 10-12 minutes until set'
+    ],
+    tips: [
+      'Use any type of pasta you have',
+      'Add any vegetables you like',
+      'Great way to use leftover pasta'
+    ],
+    nutrition: {
+      calories: 380,
+      protein: 24,
+      fat: 18,
+      carbs: 32,
+      fiber: 2
+    }
+  },
+  // INGREDIENT UPGRADES - BREAD
+  {
+    id: 'protein-french-toast',
+    name: 'Protein French Toast',
+    description: 'Transform bread into a protein-packed breakfast',
+    time: '12 min',
+    difficulty: 'Easy',
+    cost: '$2',
+    rating: 5,
+    image: '🍞',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Bread',
+    upgrades: ['High protein', 'Protein powder', 'Fruit', 'Healthy fats'],
+    ingredients: [
+      '2 slices bread',
+      '1 egg',
+      '1/4 cup milk',
+      '1 scoop vanilla protein powder',
+      '1 tbsp butter',
+      '1/4 cup berries',
+      '1 tbsp maple syrup',
+      'Cinnamon to taste'
+    ],
+    instructions: [
+      'Whisk egg, milk, protein powder, and cinnamon',
+      'Dip bread slices in mixture',
+      'Melt butter in a pan over medium heat',
+      'Cook bread until golden brown on both sides',
+      'Top with berries and maple syrup'
+    ],
+    tips: [
+      'Use thick bread for better texture',
+      'Add more protein powder for extra protein',
+      'Use any fruit you have available'
+    ],
+    nutrition: {
+      calories: 380,
+      protein: 28,
+      fat: 12,
+      carbs: 42,
+      fiber: 3
+    }
+  },
+  {
+    id: 'avocado-toast',
+    name: 'Protein Avocado Toast',
+    description: 'Classic avocado toast with protein boost',
+    time: '8 min',
+    difficulty: 'Easy',
+    cost: '$2.50',
+    rating: 5,
+    image: '🍞',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Bread',
+    upgrades: ['High protein', 'Healthy fats', 'Vegetables', 'Fiber'],
+    ingredients: [
+      '2 slices whole grain bread',
+      '1 ripe avocado',
+      '2 eggs',
+      '1/4 cup cherry tomatoes',
+      '1 tbsp olive oil',
+      'Red pepper flakes',
+      'Salt and pepper to taste'
+    ],
+    instructions: [
+      'Toast bread until golden brown',
+      'Mash avocado and spread on toast',
+      'Fry eggs to your preference',
+      'Top toast with eggs and tomatoes',
+      'Drizzle with olive oil and seasonings'
+    ],
+    tips: [
+      'Use whole grain bread for extra fiber',
+      'Add microgreens for extra nutrition',
+      'Try different seasonings like everything bagel seasoning'
+    ],
+    nutrition: {
+      calories: 420,
+      protein: 18,
+      fat: 24,
+      carbs: 32,
+      fiber: 8
+    }
+  },
+  {
+    id: 'protein-sandwich',
+    name: 'Protein-Packed Sandwich',
+    description: 'Transform bread into a protein-rich sandwich',
+    time: '10 min',
+    difficulty: 'Easy',
+    cost: '$3',
+    rating: 4,
+    image: '🍞',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Bread',
+    upgrades: ['High protein', 'Vegetables', 'Healthy fats', 'Fiber'],
+    ingredients: [
+      '2 slices whole grain bread',
+      '3 oz turkey or chicken breast',
+      '1 slice cheese',
+      '1/4 cup spinach',
+      '1/4 cup sliced cucumber',
+      '1 tbsp mustard',
+      '1 tbsp olive oil'
+    ],
+    instructions: [
+      'Toast bread lightly',
+      'Layer turkey/chicken on one slice',
+      'Add cheese, spinach, and cucumber',
+      'Spread mustard on other slice',
+      'Drizzle with olive oil and assemble'
+    ],
+    tips: [
+      'Use leftover rotisserie chicken for convenience',
+      'Add avocado for extra healthy fats',
+      'Try different bread types for variety'
+    ],
+    nutrition: {
+      calories: 380,
+      protein: 32,
+      fat: 16,
+      carbs: 28,
+      fiber: 6
+    }
+  },
+  {
+    id: 'bread-pudding',
+    name: 'Protein Bread Pudding',
+    description: 'Transform stale bread into a protein-rich dessert',
+    time: '25 min',
+    difficulty: 'Easy',
+    cost: '$2.50',
+    rating: 4,
+    image: '🍞',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Bread',
+    upgrades: ['High protein', 'Protein powder', 'Fruit', 'Healthy fats'],
+    ingredients: [
+      '4 slices stale bread, cubed',
+      '2 eggs',
+      '1 cup milk',
+      '1 scoop vanilla protein powder',
+      '1/4 cup berries',
+      '2 tbsp honey',
+      '1 tsp cinnamon',
+      '1 tbsp butter'
+    ],
+    instructions: [
+      'Preheat oven to 350°F',
+      'Whisk eggs, milk, protein powder, and cinnamon',
+      'Add bread cubes and let soak for 5 minutes',
+      'Pour into greased baking dish',
+      'Top with berries and honey',
+      'Bake for 20 minutes until set'
+    ],
+    tips: [
+      'Use any type of bread you have',
+      'Add nuts for extra crunch',
+      'Serve warm or cold'
+    ],
+    nutrition: {
+      calories: 320,
+      protein: 24,
+      fat: 10,
+      carbs: 38,
+      fiber: 3
+    }
+  },
+  // INGREDIENT UPGRADES - CANNED SOUP
+  {
+    id: 'loaded-canned-soup',
+    name: 'Loaded Canned Soup',
+    description: 'Transform basic canned soup into a hearty meal',
+    time: '10 min',
+    difficulty: 'Easy',
+    cost: '$2.50',
+    rating: 4,
+    image: '🥫',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Canned Soup',
+    upgrades: ['Add protein', 'Vegetables', 'Grains', 'Herbs'],
+    ingredients: [
+      '1 can soup (chicken noodle, tomato, etc.)',
+      '1/4 cup cooked chicken or beans',
+      '1/4 cup frozen vegetables',
+      '1/4 cup cooked rice or pasta',
+      '1 tbsp olive oil',
+      'Fresh herbs (optional)',
+      'Salt and pepper to taste'
+    ],
+    instructions: [
+      'Heat soup in a pot over medium heat',
+      'Add frozen vegetables and cook for 3 minutes',
+      'Add cooked chicken/beans and rice/pasta',
+      'Simmer for 2 minutes until heated through',
+      'Drizzle with olive oil and add herbs',
+      'Season with salt and pepper'
+    ],
+    tips: [
+      'Choose low-sodium soup when possible',
+      'Add more vegetables for extra nutrition',
+      'Use leftover grains for convenience'
+    ],
+    nutrition: {
+      calories: 280,
+      protein: 18,
+      fat: 8,
+      carbs: 32,
+      fiber: 4
+    }
+  },
+  // INGREDIENT UPGRADES - FROZEN PIZZA
+  {
+    id: 'loaded-frozen-pizza',
+    name: 'Loaded Frozen Pizza',
+    description: 'Transform frozen pizza into a protein-packed meal',
+    time: '25 min',
+    difficulty: 'Easy',
+    cost: '$4',
+    rating: 4,
+    image: '🍕',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Frozen Pizza',
+    upgrades: ['Add protein', 'Extra vegetables', 'Fresh herbs', 'Better cheese'],
+    ingredients: [
+      '1 frozen pizza',
+      '1/2 cup cooked chicken or pepperoni',
+      '1/4 cup diced bell peppers',
+      '1/4 cup sliced mushrooms',
+      '1/4 cup shredded mozzarella',
+      '1 tbsp olive oil',
+      'Fresh basil (optional)',
+      'Red pepper flakes (optional)'
+    ],
+    instructions: [
+      'Preheat oven according to pizza package',
+      'Add extra toppings to frozen pizza',
+      'Drizzle with olive oil',
+      'Bake according to package directions',
+      'Add fresh herbs and red pepper flakes after baking',
+      'Let cool for 2 minutes before slicing'
+    ],
+    tips: [
+      'Add toppings in the last 5 minutes to prevent burning',
+      'Use fresh vegetables for better taste',
+      'Don\'t overload the pizza or it won\'t cook properly'
+    ],
+    nutrition: {
+      calories: 480,
+      protein: 26,
+      fat: 22,
+      carbs: 48,
+      fiber: 3
+    }
+  },
+  // INGREDIENT UPGRADES - BEANS
+  {
+    id: 'protein-bean-bowl',
+    name: 'Protein Bean Bowl',
+    description: 'Transform beans into a protein-packed meal',
+    time: '15 min',
+    difficulty: 'Easy',
+    cost: '$2',
+    rating: 5,
+    image: '🫘',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Beans',
+    upgrades: ['High protein', 'Vegetables', 'Grains', 'Healthy fats'],
+    ingredients: [
+      '1 cup cooked beans (black, pinto, or chickpeas)',
+      '1/2 cup cooked rice or quinoa',
+      '1/4 cup diced tomatoes',
+      '1/4 cup diced avocado',
+      '1/4 cup corn',
+      '1 tbsp olive oil',
+      '1 tsp cumin',
+      '1/2 lime, juiced',
+      'Salt and pepper to taste'
+    ],
+    instructions: [
+      'Heat olive oil in a pan over medium heat',
+      'Add beans and warm through',
+      'Add rice/quinoa and seasonings',
+      'Stir in tomatoes and corn',
+      'Top with avocado and lime juice',
+      'Season with salt and pepper'
+    ],
+    tips: [
+      'Use canned beans for convenience',
+      'Add hot sauce for extra flavor',
+      'Customize with your favorite vegetables'
+    ],
+    nutrition: {
+      calories: 320,
+      protein: 16,
+      fat: 8,
+      carbs: 52,
+      fiber: 12
+    }
+  },
+  // INGREDIENT UPGRADES - VEGETABLES
+  {
+    id: 'protein-veggie-bowl',
+    name: 'Protein Veggie Bowl',
+    description: 'Transform vegetables into a protein-packed meal',
+    time: '20 min',
+    difficulty: 'Easy',
+    cost: '$3',
+    rating: 4,
+    image: '🥬',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Vegetables',
+    upgrades: ['High protein', 'Multiple vegetables', 'Grains', 'Healthy fats'],
+    ingredients: [
+      '2 cups mixed vegetables (broccoli, carrots, bell peppers)',
+      '1/2 cup cooked quinoa or rice',
+      '1/2 cup cooked chicken or tofu',
+      '1/4 cup chickpeas',
+      '2 tbsp olive oil',
+      '1 tbsp soy sauce',
+      '1 tsp garlic powder',
+      '1/2 tsp ginger powder',
+      'Salt and pepper to taste'
+    ],
+    instructions: [
+      'Steam or roast vegetables until tender',
+      'Heat olive oil in a pan over medium heat',
+      'Add chicken/tofu and warm through',
+      'Add vegetables, quinoa/rice, and chickpeas',
+      'Stir in seasonings and soy sauce',
+      'Cook until heated through and serve'
+    ],
+    tips: [
+      'Use frozen vegetables for convenience',
+      'Add more protein sources for variety',
+      'Use different seasonings to change the flavor'
+    ],
+    nutrition: {
+      calories: 340,
+      protein: 24,
+      fat: 12,
+      carbs: 38,
+      fiber: 8
+    }
+  },
+  // INGREDIENT UPGRADES - CHICKEN
+  {
+    id: 'chicken-stir-fry',
+    name: 'Chicken Stir-Fry',
+    description: 'Quick and protein-rich chicken stir-fry',
+    time: '15 min',
+    difficulty: 'Easy',
+    cost: '$4',
+    rating: 5,
+    image: '🍗',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Chicken',
+    upgrades: ['High protein', 'Vegetables', 'Healthy fats', 'Fiber'],
+    ingredients: [
+      '1 chicken breast, sliced',
+      '1/2 cup frozen mixed vegetables',
+      '2 tbsp soy sauce',
+      '1 tbsp sesame oil',
+      '2 green onions, chopped',
+      '1 clove garlic, minced',
+      '1 tbsp ginger, minced',
+      '1 tbsp cornstarch',
+      '1/4 cup chicken broth'
+    ],
+    instructions: [
+      'Slice chicken breast into thin strips',
+      'Heat sesame oil in a large pan over high heat',
+      'Stir-fry chicken until cooked through',
+      'Add vegetables and stir-fry for 2 minutes',
+      'Mix cornstarch with broth and add to pan',
+      'Add soy sauce and stir until thickened',
+      'Garnish with green onions'
+    ],
+    tips: [
+      'Use any vegetables you have',
+      'Add rice or noodles for a complete meal',
+      'Use low-sodium soy sauce if watching salt'
+    ],
+    nutrition: {
+      calories: 320,
+      protein: 32,
+      fat: 12,
+      carbs: 16,
+      fiber: 4
+    }
+  },
+  {
+    id: 'chicken-soup',
+    name: 'Chicken Soup',
+    description: 'Hearty chicken soup with vegetables',
+    time: '25 min',
+    difficulty: 'Easy',
+    cost: '$3.50',
+    rating: 4,
+    image: '🍗',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Chicken',
+    upgrades: ['High protein', 'Vegetables', 'Healthy fats', 'Fiber'],
+    ingredients: [
+      '1 chicken breast, diced',
+      '2 cups chicken broth',
+      '1/4 cup diced carrots',
+      '1/4 cup diced celery',
+      '1/4 cup diced onion',
+      '1/4 cup frozen peas',
+      '1 tbsp olive oil',
+      '1 clove garlic, minced',
+      '1 tsp Italian seasoning',
+      'Salt and pepper to taste'
+    ],
+    instructions: [
+      'Heat olive oil in a pot over medium heat',
+      'Sauté onion, carrots, and celery for 5 minutes',
+      'Add garlic and cook for 1 minute',
+      'Add broth and bring to a boil',
+      'Add chicken and simmer for 10 minutes',
+      'Add peas and cook for 2 minutes',
+      'Season with Italian seasoning, salt, and pepper'
+    ],
+    tips: [
+      'Use leftover rotisserie chicken for convenience',
+      'Add pasta or rice for extra substance',
+      'Freeze leftovers for quick meals'
+    ],
+    nutrition: {
+      calories: 280,
+      protein: 28,
+      fat: 8,
+      carbs: 16,
+      fiber: 4
+    }
+  },
+  {
+    id: 'chicken-salad',
+    name: 'Chicken Salad',
+    description: 'Protein-rich chicken salad with vegetables',
+    time: '10 min',
+    difficulty: 'Easy',
+    cost: '$3.50',
+    rating: 4,
+    image: '🍗',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Chicken',
+    upgrades: ['High protein', 'Vegetables', 'Healthy fats', 'Fiber'],
+    ingredients: [
+      '1 chicken breast, cooked and diced',
+      '1/4 cup diced celery',
+      '1/4 cup diced onion',
+      '1/4 cup diced bell pepper',
+      '2 tbsp Greek yogurt',
+      '1 tbsp mayonnaise',
+      '1 tbsp Dijon mustard',
+      '1 tbsp lemon juice',
+      'Salt and pepper to taste'
+    ],
+    instructions: [
+      'Dice cooked chicken breast',
+      'Combine chicken with all vegetables',
+      'Mix Greek yogurt, mayonnaise, mustard, and lemon juice',
+      'Toss chicken and vegetables with dressing',
+      'Season with salt and pepper',
+      'Serve on bread or lettuce wraps'
+    ],
+    tips: [
+      'Use leftover rotisserie chicken',
+      'Add grapes or apples for sweetness',
+      'Use any vegetables you have'
+    ],
+    nutrition: {
+      calories: 280,
+      protein: 32,
+      fat: 12,
+      carbs: 8,
+      fiber: 2
+    }
+  },
+  {
+    id: 'chicken-pasta',
+    name: 'Chicken Pasta',
+    description: 'Simple chicken pasta with vegetables',
+    time: '20 min',
+    difficulty: 'Easy',
+    cost: '$4',
+    rating: 5,
+    image: '🍗',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Chicken',
+    upgrades: ['High protein', 'Vegetables', 'Healthy fats', 'Fiber'],
+    ingredients: [
+      '1 chicken breast, sliced',
+      '2 cups cooked pasta',
+      '1/4 cup cherry tomatoes',
+      '1/4 cup spinach',
+      '2 tbsp olive oil',
+      '1 clove garlic, minced',
+      '1/4 cup parmesan cheese',
+      '1 tbsp lemon juice',
+      'Salt and pepper to taste'
+    ],
+    instructions: [
+      'Cook pasta according to package directions',
+      'Heat olive oil in a pan over medium heat',
+      'Cook chicken until golden and cooked through',
+      'Add garlic and cook for 1 minute',
+      'Add tomatoes and spinach',
+      'Toss with pasta and parmesan cheese',
+      'Drizzle with lemon juice and season'
+    ],
+    tips: [
+      'Use any type of pasta you have',
+      'Add more vegetables for extra nutrition',
+      'Reserve pasta water for creamier sauce'
+    ],
+    nutrition: {
+      calories: 420,
+      protein: 36,
+      fat: 16,
+      carbs: 48,
+      fiber: 4
+    }
+  },
+  // INGREDIENT UPGRADES - BEANS
+  {
+    id: 'bean-burrito',
+    name: 'Bean Burrito',
+    description: 'Protein-rich bean burrito with vegetables',
+    time: '10 min',
+    difficulty: 'Easy',
+    cost: '$2.50',
+    rating: 4,
+    image: '🫘',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Beans',
+    upgrades: ['High protein', 'Vegetables', 'Healthy fats', 'Fiber'],
+    ingredients: [
+      '1/2 cup black beans',
+      '1 large tortilla',
+      '1/4 cup shredded cheese',
+      '1/4 cup diced bell pepper',
+      '1/4 cup diced onion',
+      '2 tbsp Greek yogurt',
+      '1 tbsp salsa',
+      '1 tbsp olive oil',
+      'Salt and pepper to taste'
+    ],
+    instructions: [
+      'Heat olive oil in a pan over medium heat',
+      'Sauté onion and bell pepper for 3 minutes',
+      'Add beans and warm through',
+      'Warm tortilla in microwave or pan',
+      'Layer beans, vegetables, and cheese on tortilla',
+      'Top with Greek yogurt and salsa',
+      'Roll up and serve'
+    ],
+    tips: [
+      'Use any type of beans you have',
+      'Add rice for extra substance',
+      'Use any vegetables you like'
+    ],
+    nutrition: {
+      calories: 380,
+      protein: 18,
+      fat: 12,
+      carbs: 48,
+      fiber: 8
+    }
+  },
+  {
+    id: 'bean-soup',
+    name: 'Bean Soup',
+    description: 'Hearty bean soup with vegetables',
+    time: '20 min',
+    difficulty: 'Easy',
+    cost: '$2',
+    rating: 4,
+    image: '🫘',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Beans',
+    upgrades: ['High protein', 'Vegetables', 'Healthy fats', 'Fiber'],
+    ingredients: [
+      '1 cup mixed beans',
+      '2 cups vegetable broth',
+      '1/4 cup diced carrots',
+      '1/4 cup diced celery',
+      '1/4 cup diced onion',
+      '1 clove garlic, minced',
+      '1 tbsp olive oil',
+      '1 tsp cumin',
+      '1 tsp chili powder',
+      'Salt and pepper to taste'
+    ],
+    instructions: [
+      'Heat olive oil in a pot over medium heat',
+      'Sauté onion, carrots, and celery for 5 minutes',
+      'Add garlic and cook for 1 minute',
+      'Add broth and bring to a boil',
+      'Add beans and simmer for 10 minutes',
+      'Season with cumin, chili powder, salt, and pepper'
+    ],
+    tips: [
+      'Use any type of beans you have',
+      'Add more vegetables for extra nutrition',
+      'Use chicken broth for non-vegetarian version'
+    ],
+    nutrition: {
+      calories: 280,
+      protein: 16,
+      fat: 6,
+      carbs: 44,
+      fiber: 12
+    }
+  },
+  {
+    id: 'bean-salad',
+    name: 'Bean Salad',
+    description: 'Protein-rich bean salad with vegetables',
+    time: '8 min',
+    difficulty: 'Easy',
+    cost: '$2',
+    rating: 4,
+    image: '🫘',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Beans',
+    upgrades: ['High protein', 'Vegetables', 'Healthy fats', 'Fiber'],
+    ingredients: [
+      '1 cup mixed beans',
+      '1/4 cup diced bell pepper',
+      '1/4 cup diced cucumber',
+      '1/4 cup diced tomato',
+      '1/4 cup diced onion',
+      '2 tbsp olive oil',
+      '1 tbsp lemon juice',
+      '1 tbsp balsamic vinegar',
+      'Salt and pepper to taste'
+    ],
+    instructions: [
+      'Drain and rinse beans',
+      'Combine beans with all vegetables',
+      'Whisk olive oil, lemon juice, and balsamic vinegar',
+      'Toss salad with dressing',
+      'Season with salt and pepper',
+      'Serve chilled'
+    ],
+    tips: [
+      'Use any type of beans you have',
+      'Add feta cheese for extra flavor',
+      'Can be made ahead and stored in fridge'
+    ],
+    nutrition: {
+      calories: 240,
+      protein: 12,
+      fat: 8,
+      carbs: 32,
+      fiber: 8
+    }
+  },
+  {
+    id: 'bean-pasta',
+    name: 'Bean Pasta',
+    description: 'Protein-rich bean pasta with vegetables',
+    time: '15 min',
+    difficulty: 'Easy',
+    cost: '$3',
+    rating: 4,
+    image: '🫘',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Beans',
+    upgrades: ['High protein', 'Vegetables', 'Healthy fats', 'Fiber'],
+    ingredients: [
+      '2 cups cooked pasta',
+      '1/2 cup black beans',
+      '1/4 cup cherry tomatoes',
+      '1/4 cup spinach',
+      '2 tbsp olive oil',
+      '1 clove garlic, minced',
+      '1/4 cup parmesan cheese',
+      '1 tbsp lemon juice',
+      'Salt and pepper to taste'
+    ],
+    instructions: [
+      'Cook pasta according to package directions',
+      'Heat olive oil in a pan over medium heat',
+      'Sauté garlic for 1 minute',
+      'Add beans and warm through',
+      'Add tomatoes and spinach',
+      'Toss with pasta and parmesan cheese',
+      'Drizzle with lemon juice and season'
+    ],
+    tips: [
+      'Use any type of pasta you have',
+      'Add more vegetables for extra nutrition',
+      'Use any type of beans you have'
+    ],
+    nutrition: {
+      calories: 420,
+      protein: 20,
+      fat: 16,
+      carbs: 52,
+      fiber: 8
+    }
+  },
+  {
+    id: 'vegetable-stir-fry',
+    name: 'Vegetable Stir-Fry',
+    description: 'Quick and healthy vegetable stir-fry',
+    time: '12 min',
+    difficulty: 'Easy',
+    cost: '$2.50',
+    rating: 4,
+    image: '🥬',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Vegetables',
+    upgrades: ['High protein', 'Vegetables', 'Healthy fats', 'Fiber'],
+    ingredients: [
+      '2 cups mixed vegetables',
+      '2 tbsp soy sauce',
+      '1 tbsp sesame oil',
+      '2 green onions, chopped',
+      '1 clove garlic, minced',
+      '1 tbsp ginger, minced',
+      '1 tbsp cornstarch',
+      '1/4 cup vegetable broth',
+      '1 tbsp sesame seeds'
+    ],
+    instructions: [
+      'Heat sesame oil in a large pan over high heat',
+      'Sauté garlic and ginger for 30 seconds',
+      'Add vegetables and stir-fry for 3-4 minutes',
+      'Mix cornstarch with broth and add to pan',
+      'Add soy sauce and stir until thickened',
+      'Garnish with green onions and sesame seeds'
+    ],
+    tips: [
+      'Use any vegetables you have',
+      'Add tofu or eggs for protein',
+      'Use low-sodium soy sauce if watching salt'
+    ],
+    nutrition: {
+      calories: 180,
+      protein: 8,
+      fat: 8,
+      carbs: 20,
+      fiber: 6
+    }
+  },
+  {
+    id: 'vegetable-soup',
+    name: 'Vegetable Soup',
+    description: 'Hearty vegetable soup with protein',
+    time: '20 min',
+    difficulty: 'Easy',
+    cost: '$2',
+    rating: 4,
+    image: '🥬',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Vegetables',
+    upgrades: ['High protein', 'Vegetables', 'Healthy fats', 'Fiber'],
+    ingredients: [
+      '2 cups vegetable broth',
+      '1 cup mixed vegetables',
+      '1/4 cup diced onion',
+      '1 clove garlic, minced',
+      '1 tbsp olive oil',
+      '1 tsp Italian seasoning',
+      '1/4 cup beans or lentils',
+      'Salt and pepper to taste'
+    ],
+    instructions: [
+      'Heat olive oil in a pot over medium heat',
+      'Sauté onion and garlic for 3 minutes',
+      'Add broth and bring to a boil',
+      'Add vegetables and beans/lentils',
+      'Simmer for 10 minutes',
+      'Season with Italian seasoning, salt, and pepper'
+    ],
+    tips: [
+      'Use any vegetables you have',
+      'Add pasta or rice for extra substance',
+      'Use chicken broth for non-vegetarian version'
+    ],
+    nutrition: {
+      calories: 160,
+      protein: 8,
+      fat: 4,
+      carbs: 24,
+      fiber: 6
+    }
+  },
+  {
+    id: 'vegetable-salad',
+    name: 'Vegetable Salad',
+    description: 'Protein-rich vegetable salad',
+    time: '8 min',
+    difficulty: 'Easy',
+    cost: '$2',
+    rating: 4,
+    image: '🥬',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Vegetables',
+    upgrades: ['High protein', 'Vegetables', 'Healthy fats', 'Fiber'],
+    ingredients: [
+      '2 cups mixed vegetables',
+      '1/4 cup beans or chickpeas',
+      '1/4 cup diced avocado',
+      '2 tbsp olive oil',
+      '1 tbsp lemon juice',
+      '1 tbsp balsamic vinegar',
+      '1/4 cup feta cheese',
+      'Salt and pepper to taste'
+    ],
+    instructions: [
+      'Chop all vegetables into bite-sized pieces',
+      'Combine vegetables with beans/chickpeas',
+      'Whisk olive oil, lemon juice, and balsamic vinegar',
+      'Toss salad with dressing',
+      'Top with avocado and feta cheese',
+      'Season with salt and pepper'
+    ],
+    tips: [
+      'Use any vegetables you have',
+      'Add nuts for extra crunch',
+      'Can be made ahead and stored in fridge'
+    ],
+    nutrition: {
+      calories: 220,
+      protein: 8,
+      fat: 16,
+      carbs: 16,
+      fiber: 6
+    }
+  },
+  {
+    id: 'vegetable-pasta',
+    name: 'Vegetable Pasta',
+    description: 'Protein-rich vegetable pasta',
+    time: '15 min',
+    difficulty: 'Easy',
+    cost: '$3',
+    rating: 4,
+    image: '🥬',
+    category: 'Ingredient Upgrades',
+    subcategory: 'Vegetables',
+    upgrades: ['High protein', 'Vegetables', 'Healthy fats', 'Fiber'],
+    ingredients: [
+      '2 cups cooked pasta',
+      '1 cup mixed vegetables',
+      '1/4 cup beans or chickpeas',
+      '2 tbsp olive oil',
+      '1 clove garlic, minced',
+      '1/4 cup parmesan cheese',
+      '1 tbsp lemon juice',
+      'Salt and pepper to taste'
+    ],
+    instructions: [
+      'Cook pasta according to package directions',
+      'Heat olive oil in a pan over medium heat',
+      'Sauté garlic for 1 minute',
+      'Add vegetables and cook until tender',
+      'Add beans/chickpeas and warm through',
+      'Toss with pasta and parmesan cheese',
+      'Drizzle with lemon juice and season'
+    ],
+    tips: [
+      'Use any type of pasta you have',
+      'Add more vegetables for extra nutrition',
+      'Use any type of beans you have'
+    ],
+    nutrition: {
+      calories: 380,
+      protein: 16,
+      fat: 16,
+      carbs: 48,
+      fiber: 8
+    }
   }
 ];
 
@@ -1258,4 +2754,18 @@ export const drinkCategories = [
   { value: 'dunkin', label: 'Dunkin\'', icon: '☕' },
   { value: 'bubble-tea', label: 'Bubble Tea Shops', icon: '🧋' },
   { value: 'juice-bars', label: 'Juice Bars', icon: '🥤' }
+];
+
+// Ingredient categories for the Ingredient Upgrades page
+export const ingredientCategories = [
+  { value: 'ramen', label: 'Ramen Noodles', icon: '🍜', category: 'Instant' },
+  { value: 'mac-cheese', label: 'Mac & Cheese', icon: '🧀', category: 'Instant' },
+  { value: 'canned-soup', label: 'Canned Soup', icon: '🥫', category: 'Canned' },
+  { value: 'rice', label: 'Rice', icon: '🍚', category: 'Grains' },
+  { value: 'pasta', label: 'Pasta', icon: '🍝', category: 'Grains' },
+  { value: 'bread', label: 'Bread', icon: '🍞', category: 'Grains' },
+  { value: 'eggs', label: 'Eggs', icon: '🥚', category: 'Protein' },
+  { value: 'chicken', label: 'Chicken', icon: '🍗', category: 'Protein' },
+  { value: 'beans', label: 'Beans', icon: '🫘', category: 'Protein' },
+  { value: 'vegetables', label: 'Vegetables', icon: '🥬', category: 'Produce' }
 ]; 
