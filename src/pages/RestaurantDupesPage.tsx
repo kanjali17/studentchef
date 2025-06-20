@@ -6,11 +6,9 @@ import {
   Text,
   Badge,
   Grid,
-  GridItem,
   Card,
   CardBody,
   CardHeader,
-  Image,
   Button,
   Select,
   Input,
@@ -26,16 +24,15 @@ import {
   VStack,
   HStack,
   Divider,
-  IconButton,
-  useColorModeValue,
   Container,
-  SimpleGrid
+  SimpleGrid,
+  useToast
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { recipeDatabase, getRecipesByRestaurant, searchRecipes, restaurants } from '../data/recipeDatabase';
+import { useShoppingList } from '../context/ShoppingListContext';
 
-const MotionBox = motion(Box);
 const MotionCard = motion(Card);
 
 const RestaurantDupesPage = () => {
@@ -44,7 +41,8 @@ const RestaurantDupesPage = () => {
   const [selectedRestaurant, setSelectedRestaurant] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedRecipe, setSelectedRecipe] = useState<any>(null);
-  const [cartItems, setCartItems] = useState(0);
+  const { items, addItems } = useShoppingList();
+  const toast = useToast();
 
   // Background gradient
   const bgGradient = 'linear(to-br, orange.50, red.50, yellow.50)';
@@ -63,9 +61,28 @@ const RestaurantDupesPage = () => {
     onOpen();
   };
 
-  const addToShoppingList = (ingredient: string) => {
-    setCartItems(prev => prev + 1);
-    // Here you would typically add to a shopping list context/state
+  const handleAddToShoppingList = () => {
+    if (selectedRecipe) {
+      addItems(selectedRecipe.ingredients, selectedRecipe.name);
+      toast({
+        title: 'Added to Shopping List!',
+        description: `${selectedRecipe.ingredients.length} ingredients added from ${selectedRecipe.name}`,
+        status: 'success',
+        duration: 3000,
+        isClosable: true,
+      });
+    }
+  };
+
+  const handleAddSingleIngredient = (ingredient: string) => {
+    addItems([ingredient], selectedRecipe?.name || 'Unknown Recipe');
+    toast({
+      title: 'Added to Shopping List!',
+      description: `${ingredient} added from ${selectedRecipe?.name}`,
+      status: 'success',
+      duration: 3000,
+      isClosable: true,
+    });
   };
 
   const getRestaurantMessage = () => {
@@ -108,13 +125,13 @@ const RestaurantDupesPage = () => {
             🍽️ Restaurant Dupes
           </Badge>
           <Button
-            onClick={() => {/* Shopping cart modal */}}
+            onClick={() => navigate('/shopping-list')}
             colorScheme="orange"
             variant="ghost"
             position="relative"
             rightIcon={<Text>🛒</Text>}
           >
-            {cartItems > 0 && (
+            {items.length > 0 && (
               <Badge
                 position="absolute"
                 top="-1"
@@ -123,7 +140,7 @@ const RestaurantDupesPage = () => {
                 borderRadius="full"
                 fontSize="xs"
               >
-                {cartItems}
+                {items.length}
               </Badge>
             )}
           </Button>
@@ -302,7 +319,7 @@ const RestaurantDupesPage = () => {
                           size="sm"
                           colorScheme="orange"
                           variant="ghost"
-                          onClick={() => addToShoppingList(ingredient)}
+                          onClick={() => handleAddSingleIngredient(ingredient)}
                         >
                           Add to List
                         </Button>
@@ -361,6 +378,18 @@ const RestaurantDupesPage = () => {
                     </Box>
                   </Grid>
                 </Box>
+
+                <Divider />
+
+                {/* Add to Shopping List Button */}
+                <Button
+                  size="lg"
+                  colorScheme="orange"
+                  onClick={handleAddToShoppingList}
+                  leftIcon={<Text>🛒</Text>}
+                >
+                  Add All Ingredients to Shopping List
+                </Button>
               </VStack>
             )}
           </ModalBody>

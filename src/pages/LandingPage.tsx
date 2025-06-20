@@ -49,11 +49,12 @@ const LandingPage = () => {
       color: 'green',
     },
     {
-      icon: '☕',
-      title: 'Healthy Drink Dupes',
+      icon: '🥤',
+      title: 'Drink Dupes',
       description: 'Skip the expensive coffee shops and make your favorite drinks at home!',
       examples: ['Starbucks PSL', 'Smoothie King', 'Bubble Tea'],
       color: 'blue',
+      to: '/drink-dupes',
     },
     {
       icon: '🔥',
@@ -245,7 +246,7 @@ const LandingPage = () => {
 
             <SimpleGrid columns={{ base: 1, md: 2 }} spacing={8} w="full">
               {features.map((feature, index) => {
-                const isRestaurantDupes = feature.title === 'Restaurant Dupes';
+                const isClickable = feature.to;
                 return (
                   <MotionCard
                     key={feature.title}
@@ -258,11 +259,11 @@ const LandingPage = () => {
                     boxShadow="lg"
                     overflow="hidden"
                     whileHover={{ y: -5, boxShadow: "xl" }}
-                    cursor={isRestaurantDupes ? 'pointer' : 'default'}
-                    onClick={isRestaurantDupes ? () => navigate('/restaurant-dupes') : undefined}
-                    tabIndex={isRestaurantDupes ? 0 : undefined}
-                    role={isRestaurantDupes ? 'button' : undefined}
-                    aria-label={isRestaurantDupes ? 'Go to Restaurant Dupes' : undefined}
+                    cursor={isClickable ? 'pointer' : 'default'}
+                    onClick={isClickable ? () => navigate(feature.to!) : undefined}
+                    tabIndex={isClickable ? 0 : undefined}
+                    role={isClickable ? 'button' : undefined}
+                    aria-label={isClickable ? `Go to ${feature.title}` : undefined}
                   >
                     <CardBody p={8}>
                       <VStack spacing={6} align="start">
