@@ -10,7 +10,6 @@ import {
   SimpleGrid,
   Card,
   CardBody,
-  Icon,
   useColorModeValue,
   Modal,
   ModalOverlay,
@@ -22,23 +21,6 @@ import {
   Container,
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
-import {
-  FaHamburger,
-  FaCarrot,
-  FaCoffee,
-  FaFire,
-  FaUsers,
-  FaPlay,
-  FaStar,
-  FaInstagram,
-  FaTiktok,
-  FaTwitter,
-  FaUtensils,
-  FaMoneyBillWave,
-  FaBolt,
-  FaHeart,
-  FaFire as FaFireIcon,
-} from 'react-icons/fa';
 
 const MotionBox = motion(Box);
 const MotionCard = motion(Card);
@@ -50,35 +32,35 @@ const LandingPage = () => {
 
   const features = [
     {
-      icon: FaHamburger,
+      icon: '🍔',
       title: 'Restaurant Dupes',
       description: 'Make your favorite restaurant dishes at home for a fraction of the price!',
       examples: ['Chick-fil-A', 'McDonald\'s', 'Chipotle'],
       color: 'orange',
     },
     {
-      icon: FaCarrot,
+      icon: '🥕',
       title: 'Ingredient Upgrades',
       description: 'Transform basic ingredients into gourmet meals that will impress everyone!',
       examples: ['Gourmet Ramen', 'Mac & Cheese', 'Rice Bowl'],
       color: 'green',
     },
     {
-      icon: FaCoffee,
+      icon: '☕',
       title: 'Healthy Drink Dupes',
       description: 'Skip the expensive coffee shops and make your favorite drinks at home!',
       examples: ['Starbucks PSL', 'Smoothie King', 'Bubble Tea'],
       color: 'blue',
     },
     {
-      icon: FaFire,
+      icon: '🔥',
       title: 'Cooking Methods',
       description: 'Learn to cook with whatever equipment you have - no fancy kitchen needed!',
       examples: ['Air Fryer', 'Microwave', 'No-Cook'],
       color: 'red',
     },
     {
-      icon: FaUsers,
+      icon: '👥',
       title: 'Party Planning',
       description: 'Host the best parties with our easy-to-scale recipes and portion guides!',
       examples: ['Guest Calculator', 'Dietary Preferences', 'Portions'],
@@ -88,22 +70,22 @@ const LandingPage = () => {
 
   const benefits = [
     {
-      icon: FaMoneyBillWave,
+      icon: '💰',
       title: 'Save Money',
       description: 'Stop spending $15 on a sandwich when you can make it for $3 at home! 💰',
     },
     {
-      icon: FaBolt,
+      icon: '⚡',
       title: 'Quick & Easy',
       description: 'Most recipes ready in under 15 minutes. Perfect for busy college life! ⚡',
     },
     {
-      icon: FaHeart,
+      icon: '💪',
       title: 'Healthier Options',
       description: 'All recipes include healthy upgrades and alternatives. Your body will thank you! 💪',
     },
     {
-      icon: FaFireIcon,
+      icon: '🔥',
       title: 'Actually Tasty',
       description: 'No more bland dorm food. These recipes are fire and will impress your friends! 🔥',
     },
@@ -232,9 +214,8 @@ const LandingPage = () => {
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={onOpen}
-                leftIcon={<FaPlay />}
               >
-                See How It Works
+                ▶️ See How It Works
               </MotionButton>
             </MotionBox>
           </Container>
@@ -280,8 +261,9 @@ const LandingPage = () => {
                         borderRadius="full"
                         bg={`${feature.color}.100`}
                         color={`${feature.color}.600`}
+                        fontSize="2xl"
                       >
-                        <Icon as={feature.icon} boxSize={8} />
+                        {feature.icon}
                       </Box>
                       <VStack spacing={4} align="start">
                         <Heading size="lg">{feature.title}</Heading>
@@ -289,7 +271,7 @@ const LandingPage = () => {
                         <VStack spacing={2} align="start">
                           {feature.examples.map((example) => (
                             <HStack key={example} spacing={2}>
-                              <Icon as={FaStar} color={`${feature.color}.400`} boxSize={3} />
+                              <Text color={`${feature.color}.400`} fontSize="sm">⭐</Text>
                               <Text fontSize="sm" color="gray.500">
                                 {example}
                               </Text>
@@ -340,7 +322,7 @@ const LandingPage = () => {
                   whileHover={{ y: -3, boxShadow: "xl" }}
                 >
                   <VStack spacing={4}>
-                    <Icon as={benefit.icon} boxSize={8} color="purple.500" />
+                    <Text fontSize="3xl">{benefit.icon}</Text>
                     <Heading size="md">{benefit.title}</Heading>
                     <Text fontSize="sm" color="gray.600">
                       {benefit.description}
@@ -388,7 +370,7 @@ const LandingPage = () => {
                   <VStack spacing={4}>
                     <HStack spacing={1}>
                       {[...Array(testimonial.rating)].map((_, i) => (
-                        <Icon key={i} as={FaStar} color="yellow.400" />
+                        <Text key={i} color="yellow.400" fontSize="lg">⭐</Text>
                       ))}
                     </HStack>
                     <Text fontSize="lg" color="gray.700" fontStyle="italic">
@@ -432,9 +414,8 @@ const LandingPage = () => {
                 boxShadow="xl"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                leftIcon={<FaUtensils />}
               >
-                Start Cooking Now
+                🍴 Start Cooking Now
               </MotionButton>
             </MotionBox>
           </Container>
@@ -445,9 +426,9 @@ const LandingPage = () => {
           <Container maxW="1200px">
             <VStack spacing={4}>
               <HStack spacing={6}>
-                <Icon as={FaInstagram} boxSize={6} color="purple.500" cursor="pointer" />
-                <Icon as={FaTiktok} boxSize={6} color="purple.500" cursor="pointer" />
-                <Icon as={FaTwitter} boxSize={6} color="purple.500" cursor="pointer" />
+                <Text fontSize="2xl" color="purple.500" cursor="pointer">📷</Text>
+                <Text fontSize="2xl" color="purple.500" cursor="pointer">🎵</Text>
+                <Text fontSize="2xl" color="purple.500" cursor="pointer">🐦</Text>
               </HStack>
               <Text fontSize="sm" color="gray.500">
                 Made with ❤️ for college students everywhere
