@@ -21,6 +21,7 @@ import {
   Container,
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 const MotionBox = motion(Box);
 const MotionCard = motion(Card);
@@ -29,14 +30,16 @@ const MotionButton = motion(Button);
 const LandingPage = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const cardBg = useColorModeValue('white', 'gray.700');
+  const navigate = useNavigate();
 
   const features = [
     {
       icon: '🍔',
       title: 'Restaurant Dupes',
       description: 'Make your favorite restaurant dishes at home for a fraction of the price!',
-      examples: ['Chick-fil-A', 'McDonald\'s', 'Chipotle'],
+      examples: ['Chick-fil-A', "McDonald's", 'Chipotle'],
       color: 'orange',
+      to: '/restaurant-dupes',
     },
     {
       icon: '🥕',
@@ -241,48 +244,56 @@ const LandingPage = () => {
             </MotionBox>
 
             <SimpleGrid columns={{ base: 1, md: 2 }} spacing={8} w="full">
-              {features.map((feature, index) => (
-                <MotionCard
-                  key={feature.title}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  bg={cardBg}
-                  borderRadius="xl"
-                  boxShadow="lg"
-                  overflow="hidden"
-                  whileHover={{ y: -5, boxShadow: "xl" }}
-                >
-                  <CardBody p={8}>
-                    <VStack spacing={6} align="start">
-                      <Box
-                        p={4}
-                        borderRadius="full"
-                        bg={`${feature.color}.100`}
-                        color={`${feature.color}.600`}
-                        fontSize="2xl"
-                      >
-                        {feature.icon}
-                      </Box>
-                      <VStack spacing={4} align="start">
-                        <Heading size="lg">{feature.title}</Heading>
-                        <Text color="gray.600">{feature.description}</Text>
-                        <VStack spacing={2} align="start">
-                          {feature.examples.map((example) => (
-                            <HStack key={example} spacing={2}>
-                              <Text color={`${feature.color}.400`} fontSize="sm">⭐</Text>
-                              <Text fontSize="sm" color="gray.500">
-                                {example}
-                              </Text>
-                            </HStack>
-                          ))}
+              {features.map((feature, index) => {
+                const isRestaurantDupes = feature.title === 'Restaurant Dupes';
+                return (
+                  <MotionCard
+                    key={feature.title}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                    bg={cardBg}
+                    borderRadius="xl"
+                    boxShadow="lg"
+                    overflow="hidden"
+                    whileHover={{ y: -5, boxShadow: "xl" }}
+                    cursor={isRestaurantDupes ? 'pointer' : 'default'}
+                    onClick={isRestaurantDupes ? () => navigate('/restaurant-dupes') : undefined}
+                    tabIndex={isRestaurantDupes ? 0 : undefined}
+                    role={isRestaurantDupes ? 'button' : undefined}
+                    aria-label={isRestaurantDupes ? 'Go to Restaurant Dupes' : undefined}
+                  >
+                    <CardBody p={8}>
+                      <VStack spacing={6} align="start">
+                        <Box
+                          p={4}
+                          borderRadius="full"
+                          bg={`${feature.color}.100`}
+                          color={`${feature.color}.600`}
+                          fontSize="2xl"
+                        >
+                          {feature.icon}
+                        </Box>
+                        <VStack spacing={4} align="start">
+                          <Heading size="lg">{feature.title}</Heading>
+                          <Text color="gray.600">{feature.description}</Text>
+                          <VStack spacing={2} align="start">
+                            {feature.examples.map((example) => (
+                              <HStack key={example} spacing={2}>
+                                <Text color={`${feature.color}.400`} fontSize="sm">⭐</Text>
+                                <Text fontSize="sm" color="gray.500">
+                                  {example}
+                                </Text>
+                              </HStack>
+                            ))}
+                          </VStack>
                         </VStack>
                       </VStack>
-                    </VStack>
-                  </CardBody>
-                </MotionCard>
-              ))}
+                    </CardBody>
+                  </MotionCard>
+                );
+              })}
             </SimpleGrid>
           </Container>
         </VStack>
