@@ -31,7 +31,7 @@ export const recipeDatabase: Recipe[] = [
   {
     id: 'chick-fil-a-sandwich',
     name: 'Chick-fil-A Chicken Sandwich',
-    description: 'The iconic crispy chicken sandwich with pickle juice marinade',
+    description: 'The iconic crispy chicken sandwich marinated in pickle juice',
     time: '25 min',
     difficulty: 'Medium',
     cost: '$4',
@@ -42,30 +42,33 @@ export const recipeDatabase: Recipe[] = [
     restaurant: 'Chick-fil-A',
     ingredients: [
       '2 chicken breasts',
-      '1 cup pickle juice',
-      '1 cup flour',
-      '2 eggs',
-      '2 brioche buns',
-      'Pickles',
-      '2 tbsp butter',
-      'Salt and pepper',
+      '1 cup dill pickle juice',
+      '1/2 cup milk',
+      '1/2 cup flour',
+      '1/2 cup breadcrumbs',
+      'Paprika',
+      'Garlic powder',
+      'Cayenne',
+      'Salt',
+      'Pepper',
+      '2 hamburger buns',
+      'Mayo',
+      'Pickle slices',
       'Oil for frying'
     ],
     instructions: [
-      'Marinate chicken in pickle juice for 30 minutes (this is the secret sauce, no cap!)',
-      'Mix flour with salt and pepper in a bowl',
-      'Beat eggs in another bowl',
-      'Dredge chicken in flour, then egg, then flour again (double coating = extra crispy vibes)',
-      'Fry in hot oil until golden brown and cooked through (about 6-8 minutes)',
-      'Butter and toast the buns',
-      'Assemble: bun, chicken, pickles, top bun',
-      'Enjoy your fire sandwich! 🔥'
+      'Marinate chicken in pickle juice (30 min–overnight)',
+      'Mix flour & spices',
+      'Dip chicken in milk, then dredge in flour mix',
+      'Fry ~4 min/side',
+      'Toast buns',
+      'Assemble with mayo and pickles'
     ],
     tips: [
-      'Use pickle juice from dill pickles for that authentic taste',
+      'Chill breaded chicken before frying for better crisp',
+      'Use pickle juice from dill pickles for authentic taste',
       'Don\'t skip the double coating - it\'s what makes it extra crispy',
-      'Let the chicken rest for 5 minutes before cutting',
-      'Serve with waffle fries for the full experience'
+      'Let the chicken rest for 5 minutes before cutting'
     ],
     nutrition: {
       calories: 450,
@@ -76,146 +79,200 @@ export const recipeDatabase: Recipe[] = [
     }
   },
   {
-    id: 'chick-fil-a-fries',
-    name: 'Chick-fil-A Waffle Fries',
-    description: 'Crispy waffle-cut fries with perfect seasoning',
+    id: 'chick-fil-a-nuggets',
+    name: 'Chick-fil-A Nuggets',
+    description: 'Bite-sized, juicy nuggets just like CFA',
     time: '20 min',
     difficulty: 'Easy',
-    cost: '$2',
-    rating: 4,
-    image: '🍟',
+    cost: '$3',
+    rating: 5,
+    image: '🍗',
     category: 'Restaurant Dupes',
     subcategory: 'Chick-fil-A',
     restaurant: 'Chick-fil-A',
     ingredients: [
-      '4 large potatoes',
-      'Oil for frying',
-      'Salt',
-      'Pepper',
+      'Chicken breast chunks',
+      'Pickle juice',
+      'Egg',
+      'Milk',
+      'Flour',
       'Paprika',
       'Garlic powder'
     ],
     instructions: [
-      'Wash and peel potatoes (or keep skin on for extra fiber, your choice!)',
-      'Use a waffle cutter or mandoline to create waffle cuts',
-      'Soak in cold water for 30 minutes to remove starch',
-      'Pat completely dry with paper towels',
-      'Heat oil to 375°F (hot enough to make it rain crispy fries)',
-      'Fry in batches until golden brown (about 4-5 minutes)',
-      'Drain on paper towels and season immediately',
-      'Serve hot and crispy! No soggy fries allowed 💅'
+      'Marinate chicken in pickle juice',
+      'Dip in egg & milk, then flour',
+      'Fry until golden'
     ],
     tips: [
-      'Soaking removes starch for extra crispiness',
-      'Don\'t overcrowd the fryer - give them space to get crispy',
-      'Season while hot so the salt sticks',
-      'Double fry for extra crispy results'
+      'Serve with CFA sauce (mayo + BBQ + honey + mustard)',
+      'Use bite-sized chicken pieces for perfect nuggets',
+      'Don\'t overcrowd the fryer for even cooking'
     ],
     nutrition: {
-      calories: 320,
-      protein: 4,
-      fat: 16,
-      carbs: 38,
-      fiber: 2
+      calories: 390,
+      protein: 32,
+      fat: 17,
+      carbs: 24,
+      fiber: 1
     }
   },
   {
-    id: 'chick-fil-a-sauce',
-    name: 'Chick-fil-A Sauce',
-    description: 'The legendary dipping sauce that makes everything better',
-    time: '5 min',
+    id: 'chick-fil-a-mac-cheese',
+    name: 'Mac & Cheese',
+    description: 'Creamy and cheesy like CFA\'s',
+    time: '30 min',
     difficulty: 'Easy',
-    cost: '$1',
-    rating: 5,
-    image: '🥄',
+    cost: '$2.50',
+    rating: 4,
+    image: '🧀',
     category: 'Restaurant Dupes',
     subcategory: 'Chick-fil-A',
     restaurant: 'Chick-fil-A',
     ingredients: [
-      '1/2 cup mayo',
-      '2 tbsp mustard',
-      '2 tbsp honey',
-      '2 tbsp BBQ sauce',
-      '1 tbsp lemon juice',
-      '1/2 tsp garlic powder',
-      'Salt and pepper to taste'
+      'Elbow macaroni',
+      'Milk',
+      'Butter',
+      'Cheddar',
+      'Parmesan'
     ],
     instructions: [
-      'Mix all ingredients in a bowl (literally just stir it up, it\'s that easy)',
-      'Taste and adjust seasoning (add more honey if you want it sweeter)',
-      'Refrigerate for at least 30 minutes to let flavors meld',
-      'Serve with your homemade chicken sandwich!',
-      'This sauce is everything, no cap! 🔥'
+      'Cook pasta',
+      'Melt butter, whisk in milk and cheese',
+      'Mix with pasta, bake if desired'
     ],
     tips: [
-      'Use good quality mayo for best results',
-      'Let it sit in the fridge to develop flavor',
-      'Adjust honey and mustard to your taste preference',
-      'Keeps in fridge for up to a week'
+      'Top with breadcrumbs',
+      'Use a mix of cheeses for best flavor',
+      'Don\'t overcook the pasta'
     ],
     nutrition: {
-      calories: 120,
-      protein: 0,
-      fat: 10,
-      carbs: 8,
-      fiber: 0
+      calories: 420,
+      protein: 14,
+      fat: 20,
+      carbs: 46,
+      fiber: 2
     }
   },
   // RESTAURANT DUPES - MCDONALD'S
   {
     id: 'mcdonalds-big-mac',
-    name: 'McDonald\'s Big Mac',
-    description: 'The classic double-decker burger with special sauce',
-    time: '30 min',
-    difficulty: 'Medium',
-    cost: '$5',
-    rating: 4,
+    name: 'Big Mac',
+    description: 'Double-stacked burger with "special sauce"',
+    time: '20 min',
+    difficulty: 'Easy',
+    cost: '$3',
+    rating: 5,
     image: '🍔',
     category: 'Restaurant Dupes',
     subcategory: 'McDonald\'s',
     restaurant: 'McDonald\'s',
     ingredients: [
-      '1/2 lb ground beef',
-      '3 sesame seed buns',
+      'Hamburger patties',
+      'Buns',
+      'Cheese',
       'Lettuce',
-      'Cheese slices',
+      'Onion',
       'Pickles',
-      'Onions',
-      'Special sauce',
-      'Salt and pepper'
+      'Sauce'
     ],
     instructions: [
-      'Form beef into 2 thin patties (make them thicc but not too thicc)',
-      'Season with salt and pepper',
-      'Cook on high heat for 3-4 minutes per side',
-      'Add cheese to one patty and let it melt',
-      'Toast the buns (don\'t skip this step, it\'s crucial!)',
-      'Assemble: bottom bun, lettuce, patty with cheese, middle bun, lettuce, second patty, top bun',
-      'Add special sauce, pickles, and onions',
-      'Enjoy your homemade Big Mac! It\'s giving main character energy 🍔'
+      'Cook patties',
+      'Toast buns',
+      'Stack with lettuce, cheese, pickles, onion, and sauce'
     ],
     tips: [
+      'Special Sauce = mayo + relish + ketchup + mustard',
       'Use 80/20 ground beef for best flavor',
-      'Don\'t press down on the patties while cooking',
-      'Let the meat rest for 5 minutes before assembling',
-      'Toast the buns for that authentic texture'
+      'Don\'t press down on the patties while cooking'
     ],
     nutrition: {
-      calories: 550,
+      calories: 540,
       protein: 28,
-      fat: 30,
+      fat: 29,
       carbs: 42,
-      fiber: 2
+      fiber: 3
+    }
+  },
+  {
+    id: 'mcdonalds-egg-mcmuffin',
+    name: 'Egg McMuffin',
+    description: 'Classic breakfast sandwich',
+    time: '10 min',
+    difficulty: 'Easy',
+    cost: '$2',
+    rating: 4,
+    image: '🥚',
+    category: 'Restaurant Dupes',
+    subcategory: 'McDonald\'s',
+    restaurant: 'McDonald\'s',
+    ingredients: [
+      'English muffin',
+      'Egg',
+      'Ham',
+      'Cheese'
+    ],
+    instructions: [
+      'Toast muffin',
+      'Fry egg in ring mold',
+      'Stack with cheese and ham'
+    ],
+    tips: [
+      'Add a butter sear for real McD vibes',
+      'Use a mason jar lid as an egg ring if needed',
+      'Let the egg set before flipping'
+    ],
+    nutrition: {
+      calories: 300,
+      protein: 16,
+      fat: 12,
+      carbs: 29,
+      fiber: 1
+    }
+  },
+  {
+    id: 'mcdonalds-fries',
+    name: 'Fries',
+    description: 'Crispy, salty, golden fries',
+    time: '25 min',
+    difficulty: 'Medium',
+    cost: '$1.50',
+    rating: 5,
+    image: '🍟',
+    category: 'Restaurant Dupes',
+    subcategory: 'McDonald\'s',
+    restaurant: 'McDonald\'s',
+    ingredients: [
+      'Russet potatoes',
+      'Oil',
+      'Sugar water soak'
+    ],
+    instructions: [
+      'Thin slice & soak potatoes in sugar water 30 min',
+      'Double fry: first at 325°F, then at 375°F',
+      'Salt after'
+    ],
+    tips: [
+      'Soak = secret to crispiness',
+      'Don\'t overcrowd the fryer',
+      'Season while hot so the salt sticks'
+    ],
+    nutrition: {
+      calories: 330,
+      protein: 4,
+      fat: 17,
+      carbs: 44,
+      fiber: 3
     }
   },
   // RESTAURANT DUPES - CHIPOTLE
   {
     id: 'chipotle-burrito-bowl',
-    name: 'Chipotle Burrito Bowl',
+    name: 'Burrito Bowl',
     description: 'Fresh and flavorful burrito bowl with all the fixings',
-    time: '20 min',
-    difficulty: 'Medium',
-    cost: '$6',
+    time: '30 min',
+    difficulty: 'Easy',
+    cost: '$5',
     rating: 5,
     image: '🌯',
     category: 'Restaurant Dupes',
@@ -223,35 +280,321 @@ export const recipeDatabase: Recipe[] = [
     restaurant: 'Chipotle',
     ingredients: [
       'Rice',
+      'Grilled chicken',
       'Black beans',
-      'Chicken',
-      'Bell peppers',
-      'Onions',
-      'Cilantro',
-      'Lime',
-      'Sour cream',
+      'Corn',
+      'Salsa',
       'Cheese',
-      'Salsa'
+      'Sour cream',
+      'Lime'
     ],
     instructions: [
-      'Cook rice with lime and cilantro',
-      'Season and cook chicken',
-      'Sauté peppers and onions',
-      'Assemble bowl with rice, beans, chicken, vegetables',
-      'Top with sour cream, cheese, and salsa'
+      'Layer everything into a bowl'
     ],
     tips: [
-      'Use leftover rice for convenience',
+      'Use pre-cooked chicken and frozen corn',
       'Marinate chicken in lime and spices',
-      'Add guacamole for extra flavor',
-      'Customize with your favorite toppings'
+      'Add guacamole for extra flavor'
+    ],
+    nutrition: {
+      calories: 600,
+      protein: 40,
+      fat: 20,
+      carbs: 55,
+      fiber: 7
+    }
+  },
+  {
+    id: 'chipotle-guacamole',
+    name: 'Guacamole',
+    description: 'Fresh and creamy guacamole',
+    time: '10 min',
+    difficulty: 'Easy',
+    cost: '$2',
+    rating: 5,
+    image: '🥑',
+    category: 'Restaurant Dupes',
+    subcategory: 'Chipotle',
+    restaurant: 'Chipotle',
+    ingredients: [
+      'Avocado',
+      'Lime',
+      'Red onion',
+      'Cilantro',
+      'Salt'
+    ],
+    instructions: [
+      'Mash and mix'
+    ],
+    tips: [
+      'Add tomato if you like',
+      'Serve immediately',
+      'Use ripe avocados for best results'
+    ],
+    nutrition: {
+      calories: 240,
+      protein: 3,
+      fat: 20,
+      carbs: 13,
+      fiber: 7
+    }
+  },
+  {
+    id: 'chipotle-cilantro-lime-rice',
+    name: 'Cilantro Lime Rice',
+    description: 'Fresh and flavorful rice',
+    time: '20 min',
+    difficulty: 'Easy',
+    cost: '$1',
+    rating: 4,
+    image: '🍚',
+    category: 'Restaurant Dupes',
+    subcategory: 'Chipotle',
+    restaurant: 'Chipotle',
+    ingredients: [
+      'Cooked white rice',
+      'Lime juice',
+      'Cilantro',
+      'Salt'
+    ],
+    instructions: [
+      'Stir everything into warm rice'
+    ],
+    tips: [
+      'Day-old rice = best texture',
+      'Use fresh cilantro for best flavor',
+      'Add a squeeze of lime juice for brightness'
+    ],
+    nutrition: {
+      calories: 200,
+      protein: 4,
+      fat: 1,
+      carbs: 42,
+      fiber: 1
+    }
+  },
+  // RESTAURANT DUPES - SUBWAY
+  {
+    id: 'subway-italian-sub',
+    name: 'Italian Sub',
+    description: 'Classic Italian cold cut sandwich',
+    time: '10 min',
+    difficulty: 'Easy',
+    cost: '$4',
+    rating: 4,
+    image: '🥪',
+    category: 'Restaurant Dupes',
+    subcategory: 'Subway',
+    restaurant: 'Subway',
+    ingredients: [
+      'Hoagie roll',
+      'Ham',
+      'Salami',
+      'Pepperoni',
+      'Cheese',
+      'Lettuce',
+      'Tomato',
+      'Onion',
+      'Pickles',
+      'Italian dressing'
+    ],
+    instructions: [
+      'Stack it up cold or toast'
+    ],
+    tips: [
+      'Use pre-packaged lunch meat',
+      'Toast the bread for extra crunch',
+      'Layer meats evenly for best flavor'
     ],
     nutrition: {
       calories: 480,
-      protein: 32,
-      fat: 16,
-      carbs: 52,
+      protein: 26,
+      fat: 24,
+      carbs: 38,
+      fiber: 3
+    }
+  },
+  {
+    id: 'subway-veggie-delite',
+    name: 'Veggie Delite',
+    description: 'Fresh vegetable sandwich',
+    time: '5 min',
+    difficulty: 'Easy',
+    cost: '$3',
+    rating: 4,
+    image: '🥪',
+    category: 'Restaurant Dupes',
+    subcategory: 'Subway',
+    restaurant: 'Subway',
+    ingredients: [
+      'Roll',
+      'Lettuce',
+      'Tomato',
+      'Cucumber',
+      'Olives',
+      'Vinaigrette'
+    ],
+    instructions: [
+      'Layer vegetables on roll',
+      'Drizzle with vinaigrette'
+    ],
+    tips: [
+      'Add hummus or cheese for protein',
+      'Use fresh vegetables for best taste',
+      'Customize with your favorite veggies'
+    ],
+    nutrition: {
+      calories: 280,
+      protein: 6,
+      fat: 6,
+      carbs: 48,
+      fiber: 5
+    }
+  },
+  {
+    id: 'subway-tuna-sub',
+    name: 'Tuna Sub',
+    description: 'Classic tuna sandwich',
+    time: '10 min',
+    difficulty: 'Easy',
+    cost: '$3.50',
+    rating: 5,
+    image: '🥪',
+    category: 'Restaurant Dupes',
+    subcategory: 'Subway',
+    restaurant: 'Subway',
+    ingredients: [
+      'Tuna',
+      'Mayo',
+      'Roll',
+      'Lettuce',
+      'Tomato',
+      'Onion'
+    ],
+    instructions: [
+      'Mix tuna with mayo',
+      'Stuff into roll with vegetables'
+    ],
+    tips: [
+      'Light mayo for fewer calories',
+      'Add celery for crunch',
+      'Use good quality tuna for best flavor'
+    ],
+    nutrition: {
+      calories: 430,
+      protein: 20,
+      fat: 22,
+      carbs: 35,
+      fiber: 3
+    }
+  },
+  // RESTAURANT DUPES - TACO BELL
+  {
+    id: 'taco-bell-crunchwrap-supreme',
+    name: 'Crunchwrap Supreme',
+    description: 'Wrapped and grilled to perfection',
+    time: '25 min',
+    difficulty: 'Medium',
+    cost: '$4',
+    rating: 5,
+    image: '🌮',
+    category: 'Restaurant Dupes',
+    subcategory: 'Taco Bell',
+    restaurant: 'Taco Bell',
+    ingredients: [
+      'Tortilla',
+      'Tostada shell',
+      'Ground beef',
+      'Sour cream',
+      'Lettuce',
+      'Tomato',
+      'Cheese'
+    ],
+    instructions: [
+      'Layer everything',
+      'Fold tortilla over',
+      'Pan-fry until golden'
+    ],
+    tips: [
+      'Use yogurt for a healthy swap',
+      'Don\'t overstuff or it won\'t fold properly',
+      'Press down while cooking for even browning'
+    ],
+    nutrition: {
+      calories: 510,
+      protein: 24,
+      fat: 28,
+      carbs: 42,
+      fiber: 4
+    }
+  },
+  {
+    id: 'taco-bell-bean-burrito',
+    name: 'Bean Burrito',
+    description: 'Simple and satisfying',
+    time: '15 min',
+    difficulty: 'Easy',
+    cost: '$2',
+    rating: 4,
+    image: '🌮',
+    category: 'Restaurant Dupes',
+    subcategory: 'Taco Bell',
+    restaurant: 'Taco Bell',
+    ingredients: [
+      'Tortilla',
+      'Refried beans',
+      'Cheese',
+      'Red sauce',
+      'Optional onion'
+    ],
+    instructions: [
+      'Fill and roll'
+    ],
+    tips: [
+      'Warm the tortilla first',
+      'Add extra cheese for more flavor',
+      'Serve with hot sauce'
+    ],
+    nutrition: {
+      calories: 350,
+      protein: 12,
+      fat: 10,
+      carbs: 50,
       fiber: 8
+    }
+  },
+  {
+    id: 'taco-bell-cinnamon-twists',
+    name: 'Cinnamon Twists',
+    description: 'Sweet and crunchy dessert',
+    time: '10 min',
+    difficulty: 'Easy',
+    cost: '$1',
+    rating: 5,
+    image: '🍩',
+    category: 'Restaurant Dupes',
+    subcategory: 'Taco Bell',
+    restaurant: 'Taco Bell',
+    ingredients: [
+      'Duros (pasta wheels)',
+      'Oil',
+      'Cinnamon sugar'
+    ],
+    instructions: [
+      'Fry duros till puffed',
+      'Toss in sugar mix'
+    ],
+    tips: [
+      'Watch them puff in 10 seconds!',
+      'Don\'t overcook or they\'ll burn',
+      'Toss immediately while hot'
+    ],
+    nutrition: {
+      calories: 220,
+      protein: 1,
+      fat: 10,
+      carbs: 33,
+      fiber: 0
     }
   },
   // INGREDIENT UPGRADES - MAC & CHEESE
@@ -295,8 +638,7 @@ export const recipeDatabase: Recipe[] = [
       carbs: 43,
       fiber: 2
     }
-  },
-  // Add more recipes here...
+  }
 ];
 
 // Helper functions to filter recipes
@@ -304,8 +646,20 @@ export const getRecipesByCategory = (category: string): Recipe[] => {
   return recipeDatabase.filter(recipe => recipe.category === category);
 };
 
-export const getRecipesByRestaurant = (restaurant: string): Recipe[] => {
-  return recipeDatabase.filter(recipe => recipe.restaurant === restaurant);
+export const getRecipesByRestaurant = (restaurantValue: string): Recipe[] => {
+  // Map dropdown values to actual restaurant names
+  const restaurantMapping: { [key: string]: string } = {
+    'chick-fil-a': 'Chick-fil-A',
+    'mcdonalds': 'McDonald\'s',
+    'chipotle': 'Chipotle',
+    'subway': 'Subway',
+    'taco-bell': 'Taco Bell'
+  };
+  
+  const actualRestaurantName = restaurantMapping[restaurantValue];
+  if (!actualRestaurantName) return [];
+  
+  return recipeDatabase.filter(recipe => recipe.restaurant === actualRestaurantName);
 };
 
 export const getRecipesBySubcategory = (subcategory: string): Recipe[] => {
@@ -327,7 +681,5 @@ export const restaurants = [
   { value: 'mcdonalds', label: 'McDonald\'s', icon: '🍔' },
   { value: 'chipotle', label: 'Chipotle', icon: '🌯' },
   { value: 'subway', label: 'Subway', icon: '🥪' },
-  { value: 'taco-bell', label: 'Taco Bell', icon: '🌮' },
-  { value: 'pizza-hut', label: 'Pizza Hut', icon: '🍕' },
-  { value: 'dominos', label: 'Domino\'s', icon: '🍕' }
+  { value: 'taco-bell', label: 'Taco Bell', icon: '🌮' }
 ]; 
