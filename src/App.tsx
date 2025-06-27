@@ -12,6 +12,7 @@ import PartyPlanningPage from './pages/PartyPlanningPage';
 import CookingMethodPage from './pages/CookingMethodPage';
 import ShoppingListPage from './pages/ShoppingListPage';
 import { ShoppingListProvider } from './context/ShoppingListContext';
+import MusicControl from './components/MusicControl';
 
 const NavButton = Button as any;
 
@@ -40,6 +41,7 @@ function App() {
             <Route path="/cooking-method" element={<CookingMethodPage />} />
             <Route path="/shopping-list" element={<ShoppingListPage />} />
           </Routes>
+          <MusicControl />
         </Box>
       </ShoppingListProvider>
     </ChakraProvider>

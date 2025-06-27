@@ -2734,6 +2734,292 @@ export const recipeDatabase: Recipe[] = [
       carbs: 48,
       fiber: 8
     }
+  },
+  // MICROWAVE RECIPES
+  {
+    id: 'microwave-mug-cake',
+    name: 'Microwave Mug Cake',
+    description: 'Quick chocolate cake in a mug - ready in 2 minutes!',
+    time: '2 min',
+    difficulty: 'Easy',
+    cost: '$1',
+    rating: 5,
+    image: '🍰',
+    category: 'Cooking Methods',
+    subcategory: 'Microwave',
+    cookingMethod: 'Microwave',
+    ingredients: [
+      '4 tbsp flour',
+      '3 tbsp sugar',
+      '2 tbsp cocoa powder',
+      '1/4 tsp baking powder',
+      'Pinch of salt',
+      '3 tbsp milk',
+      '2 tbsp vegetable oil',
+      '1/4 tsp vanilla extract'
+    ],
+    instructions: [
+      'In a large microwave-safe mug, whisk together flour, sugar, cocoa powder, baking powder, and salt',
+      'Add milk, oil, and vanilla extract. Stir until smooth',
+      'Microwave on high for 1-2 minutes until cake is set',
+      'Let cool for 1 minute before eating'
+    ],
+    tips: [
+      'Don\'t overcook - it will become dry',
+      'Use a large mug to prevent overflow',
+      'Add chocolate chips for extra indulgence'
+    ],
+    nutrition: {
+      calories: 350,
+      protein: 6,
+      fat: 14,
+      carbs: 52,
+      fiber: 3
+    }
+  },
+  {
+    id: 'microwave-scrambled-eggs',
+    name: 'Microwave Scrambled Eggs',
+    description: 'Fluffy scrambled eggs made in the microwave',
+    time: '3 min',
+    difficulty: 'Easy',
+    cost: '$1',
+    rating: 4,
+    image: '🍳',
+    category: 'Cooking Methods',
+    subcategory: 'Microwave',
+    cookingMethod: 'Microwave',
+    ingredients: [
+      '2 eggs',
+      '2 tbsp milk',
+      'Salt and pepper to taste',
+      '1 tbsp butter'
+    ],
+    instructions: [
+      'Crack eggs into a microwave-safe bowl',
+      'Add milk, salt, and pepper. Whisk until combined',
+      'Microwave on high for 30 seconds',
+      'Stir gently and microwave for another 30 seconds',
+      'Continue microwaving in 15-second intervals until eggs are set'
+    ],
+    tips: [
+      'Don\'t overcook - eggs will become rubbery',
+      'Stir between intervals for fluffy texture',
+      'Add cheese or herbs for extra flavor'
+    ],
+    nutrition: {
+      calories: 180,
+      protein: 12,
+      fat: 14,
+      carbs: 2,
+      fiber: 0
+    }
+  },
+  // NO-COOK RECIPES
+  {
+    id: 'greek-yogurt-parfait',
+    name: 'Greek Yogurt Parfait',
+    description: 'Fresh and healthy no-cook breakfast parfait',
+    time: '5 min',
+    difficulty: 'Easy',
+    cost: '$2',
+    rating: 5,
+    image: '🥣',
+    category: 'Cooking Methods',
+    subcategory: 'No-Cook',
+    cookingMethod: 'No-Cook',
+    ingredients: [
+      '1 cup Greek yogurt',
+      '1/4 cup granola',
+      '1/4 cup mixed berries',
+      '1 tbsp honey',
+      '1 tbsp chopped nuts'
+    ],
+    instructions: [
+      'Layer half the yogurt in a glass or bowl',
+      'Add half the granola and berries',
+      'Repeat layers with remaining ingredients',
+      'Drizzle with honey and top with nuts'
+    ],
+    tips: [
+      'Use any berries you have available',
+      'Substitute granola with cereal or oats',
+      'Add chia seeds for extra nutrition'
+    ],
+    nutrition: {
+      calories: 280,
+      protein: 20,
+      fat: 8,
+      carbs: 35,
+      fiber: 4
+    }
+  },
+  {
+    id: 'tuna-salad',
+    name: 'Tuna Salad',
+    description: 'Quick and protein-rich no-cook salad',
+    time: '8 min',
+    difficulty: 'Easy',
+    cost: '$2',
+    rating: 4,
+    image: '🥪',
+    category: 'Cooking Methods',
+    subcategory: 'No-Cook',
+    cookingMethod: 'No-Cook',
+    ingredients: [
+      '1 can tuna, drained',
+      '2 tbsp mayonnaise',
+      '1 tbsp mustard',
+      '1/4 cup diced celery',
+      '1/4 cup diced onion',
+      'Salt and pepper to taste'
+    ],
+    instructions: [
+      'In a bowl, flake the tuna with a fork',
+      'Add mayonnaise, mustard, celery, and onion',
+      'Mix well until combined',
+      'Season with salt and pepper',
+      'Serve on bread, crackers, or lettuce wraps'
+    ],
+    tips: [
+      'Add pickles for extra crunch',
+      'Use Greek yogurt instead of mayo for a healthier option',
+      'Add hard-boiled eggs for extra protein'
+    ],
+    nutrition: {
+      calories: 220,
+      protein: 25,
+      fat: 12,
+      carbs: 4,
+      fiber: 1
+    }
+  },
+  // AIR FRYER RECIPES
+  {
+    id: 'air-fryer-chicken-wings',
+    name: 'Air Fryer Chicken Wings',
+    description: 'Crispy wings without the oil - air fryer magic!',
+    time: '20 min',
+    difficulty: 'Easy',
+    cost: '$4',
+    rating: 5,
+    image: '🍗',
+    category: 'Cooking Methods',
+    subcategory: 'Air Fryer',
+    cookingMethod: 'Air Fryer',
+    ingredients: [
+      '1 lb chicken wings',
+      '1 tbsp olive oil',
+      '1 tsp garlic powder',
+      '1 tsp paprika',
+      'Salt and pepper to taste',
+      'Your favorite wing sauce'
+    ],
+    instructions: [
+      'Preheat air fryer to 400°F for 5 minutes',
+      'Pat wings dry with paper towels',
+      'Toss wings with oil and seasonings',
+      'Place wings in air fryer basket in a single layer',
+      'Cook for 12 minutes, flip, and cook for 8 more minutes',
+      'Toss with sauce and serve hot'
+    ],
+    tips: [
+      'Don\'t overcrowd the basket',
+      'Pat wings dry for extra crispiness',
+      'Spray with oil for better browning'
+    ],
+    nutrition: {
+      calories: 320,
+      protein: 28,
+      fat: 22,
+      carbs: 2,
+      fiber: 0
+    }
+  },
+  // SLOW COOKER RECIPES
+  {
+    id: 'slow-cooker-chili',
+    name: 'Slow Cooker Chili',
+    description: 'Set it and forget it hearty chili',
+    time: '6 hours',
+    difficulty: 'Easy',
+    cost: '$5',
+    rating: 5,
+    image: '🍲',
+    category: 'Cooking Methods',
+    subcategory: 'Slow Cooker',
+    cookingMethod: 'Slow Cooker',
+    ingredients: [
+      '1 lb ground beef',
+      '1 onion, diced',
+      '2 cans kidney beans, drained',
+      '1 can diced tomatoes',
+      '2 tbsp chili powder',
+      '1 tsp cumin',
+      'Salt and pepper to taste'
+    ],
+    instructions: [
+      'Brown ground beef in a skillet over medium heat',
+      'Transfer beef to slow cooker',
+      'Add all remaining ingredients to slow cooker',
+      'Stir to combine',
+      'Cook on low for 6-8 hours or high for 4 hours',
+      'Serve with cheese, sour cream, and crackers'
+    ],
+    tips: [
+      'Don\'t lift the lid during cooking',
+      'Add more beans for a vegetarian version',
+      'Freeze leftovers for quick meals'
+    ],
+    nutrition: {
+      calories: 380,
+      protein: 25,
+      fat: 18,
+      carbs: 28,
+      fiber: 8
+    }
+  },
+  // GRILL RECIPES
+  {
+    id: 'grilled-cheese-burger',
+    name: 'Grilled Cheese Burger',
+    description: 'Classic burger with melted cheese on the grill',
+    time: '15 min',
+    difficulty: 'Medium',
+    cost: '$4',
+    rating: 5,
+    image: '🍔',
+    category: 'Cooking Methods',
+    subcategory: 'Grill',
+    cookingMethod: 'Grill',
+    ingredients: [
+      '1/4 lb ground beef',
+      '1 hamburger bun',
+      '1 slice cheese',
+      'Lettuce, tomato, onion',
+      'Ketchup, mustard, mayo',
+      'Salt and pepper to taste'
+    ],
+    instructions: [
+      'Preheat grill to medium-high heat',
+      'Form beef into a patty and season with salt and pepper',
+      'Grill patty for 4-5 minutes per side',
+      'Add cheese during last minute of cooking',
+      'Toast bun on grill for 1-2 minutes',
+      'Assemble burger with toppings and condiments'
+    ],
+    tips: [
+      'Don\'t press down on the patty while cooking',
+      'Let meat rest for 2 minutes before serving',
+      'Use a meat thermometer for perfect doneness'
+    ],
+    nutrition: {
+      calories: 450,
+      protein: 25,
+      fat: 28,
+      carbs: 25,
+      fiber: 2
+    }
   }
 ];
 
@@ -2802,4 +3088,182 @@ export const ingredientCategories = [
   { value: 'chicken', label: 'Chicken', icon: '🍗', category: 'Protein' },
   { value: 'beans', label: 'Beans', icon: '🫘', category: 'Protein' },
   { value: 'vegetables', label: 'Vegetables', icon: '🥬', category: 'Produce' }
-]; 
+];
+
+// Cooking methods for the Cooking Methods page
+export const cookingMethods = [
+  {
+    icon: '🔥',
+    title: 'Air Fryer',
+    description: 'Crispy, delicious food with minimal oil. Perfect for dorms!',
+    color: 'red',
+    difficulty: 'Easy',
+    time: '10-20 min',
+    keywords: ['air fryer', 'air fry', 'crispy', 'fried'],
+    tips: [
+      'Preheat for 3-5 minutes',
+      'Don\'t overcrowd the basket',
+      'Shake halfway through cooking',
+      'Spray with oil for extra crispiness'
+    ]
+  },
+  {
+    icon: '⚡',
+    title: 'Microwave',
+    description: 'Quick meals when you\'re in a hurry. No stove needed!',
+    color: 'orange',
+    difficulty: 'Very Easy',
+    time: '2-10 min',
+    keywords: ['microwave', 'mug', 'quick', 'fast'],
+    tips: [
+      'Use microwave-safe containers',
+      'Cover food to prevent splatters',
+      'Stir halfway through cooking',
+      'Let food stand for 1-2 minutes after cooking'
+    ]
+  },
+  {
+    icon: '❄️',
+    title: 'No-Cook',
+    description: 'Fresh, healthy meals that require zero cooking equipment!',
+    color: 'green',
+    difficulty: 'Easiest',
+    time: '5-15 min',
+    keywords: ['no cook', 'raw', 'fresh', 'salad', 'smoothie', 'overnight'],
+    tips: [
+      'Prep ingredients ahead of time',
+      'Use fresh, seasonal produce',
+      'Keep a well-stocked pantry',
+      'Experiment with different dressings'
+    ]
+  },
+  {
+    icon: '🍳',
+    title: 'Stovetop',
+    description: 'Classic cooking methods for when you have access to a stove.',
+    color: 'blue',
+    difficulty: 'Medium',
+    time: '15-30 min',
+    keywords: ['stovetop', 'pan', 'skillet', 'saucepan', 'fry', 'saute'],
+    tips: [
+      'Keep heat at medium-high',
+      'Prep all ingredients first',
+      'Don\'t overcrowd the pan',
+      'Season as you cook'
+    ]
+  },
+  {
+    icon: '🌡️',
+    title: 'Slow Cooker',
+    description: 'Set it and forget it! Perfect for meal prep and busy schedules.',
+    color: 'purple',
+    difficulty: 'Easy',
+    time: '4-8 hours',
+    keywords: ['slow cooker', 'crock pot', 'slow cook', 'braise'],
+    tips: [
+      'Don\'t lift the lid during cooking',
+      'Layer ingredients properly',
+      'Use the right amount of liquid',
+      'Cook on low for better flavor'
+    ]
+  },
+  {
+    icon: '🔥',
+    title: 'Grill',
+    description: 'Perfect for outdoor cooking and getting that smoky flavor!',
+    color: 'red',
+    difficulty: 'Medium',
+    time: '10-25 min',
+    keywords: ['grill', 'grilled', 'bbq', 'barbecue', 'charcoal'],
+    tips: [
+      'Preheat the grill',
+      'Oil the grates',
+      'Don\'t move food too much',
+      'Use a meat thermometer'
+    ]
+  }
+];
+
+// Helper function to get recipes by cooking method
+export const getRecipesByCookingMethod = (methodKeywords: string[]): Recipe[] => {
+  return recipeDatabase.filter(recipe => {
+    // Exclude drinks from cooking methods
+    if (recipe.category === 'Drink Dupes') {
+      return false;
+    }
+    
+    const searchText = `${recipe.name} ${recipe.description} ${recipe.instructions.join(' ')} ${recipe.category} ${recipe.subcategory}`.toLowerCase();
+    
+    // More specific filtering based on cooking method
+    const method = methodKeywords[0]?.toLowerCase();
+    
+    if (method === 'microwave') {
+      // Only include recipes that specifically mention microwave or are microwave-friendly
+      return searchText.includes('microwave') || 
+             searchText.includes('mug') || 
+             recipe.name.toLowerCase().includes('mug') ||
+             recipe.description.toLowerCase().includes('quick') ||
+             recipe.time.includes('2') || recipe.time.includes('3') || recipe.time.includes('5');
+    }
+    
+    if (method === 'no cook') {
+      // Only include recipes that don't require cooking
+      return searchText.includes('no cook') || 
+             searchText.includes('raw') || 
+             searchText.includes('fresh') || 
+             searchText.includes('salad') || 
+             searchText.includes('smoothie') || 
+             searchText.includes('overnight') ||
+             recipe.name.toLowerCase().includes('salad') ||
+             recipe.name.toLowerCase().includes('smoothie');
+    }
+    
+    if (method === 'air fryer') {
+      // Only include recipes that work well in air fryer
+      return searchText.includes('air fryer') || 
+             searchText.includes('air fry') || 
+             searchText.includes('crispy') || 
+             searchText.includes('fried') ||
+             recipe.name.toLowerCase().includes('chicken') ||
+             recipe.name.toLowerCase().includes('fries') ||
+             recipe.name.toLowerCase().includes('nuggets');
+    }
+    
+    if (method === 'slow cooker') {
+      // Only include recipes that work in slow cooker
+      return searchText.includes('slow cooker') || 
+             searchText.includes('crock pot') || 
+             searchText.includes('slow cook') || 
+             searchText.includes('braise') ||
+             recipe.name.toLowerCase().includes('stew') ||
+             recipe.name.toLowerCase().includes('soup') ||
+             recipe.name.toLowerCase().includes('chili');
+    }
+    
+    if (method === 'grill') {
+      // Only include recipes that work on grill
+      return searchText.includes('grill') || 
+             searchText.includes('grilled') || 
+             searchText.includes('bbq') || 
+             searchText.includes('barbecue') ||
+             recipe.name.toLowerCase().includes('burger') ||
+             recipe.name.toLowerCase().includes('hot dog') ||
+             recipe.name.toLowerCase().includes('chicken');
+    }
+    
+    if (method === 'stovetop') {
+      // Include most recipes that don't fit other categories
+      return !searchText.includes('microwave') && 
+             !searchText.includes('air fryer') && 
+             !searchText.includes('slow cooker') && 
+             !searchText.includes('grill') &&
+             !searchText.includes('no cook') &&
+             !searchText.includes('raw') &&
+             !searchText.includes('salad') &&
+             !searchText.includes('smoothie');
+    }
+    
+    // Fallback to keyword matching
+    return methodKeywords.some(keyword => searchText.includes(keyword.toLowerCase()));
+  });
+};

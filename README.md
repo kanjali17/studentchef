@@ -7,6 +7,20 @@ A college-focused recipe finder web app built with React, Chakra UI, and Framer 
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0.0-blue)
 ![Chakra UI](https://img.shields.io/badge/Chakra%20UI-2.8.0-purple)
 
+## 🌐 Live Website
+
+**🎉 The app is now live and ready to use!**
+
+👉 **[Visit Student Chef](https://kanjali17.github.io/studentchef)** 👈
+
+Experience all the features including:
+- 🎵 Background music player
+- 🍳 Restaurant dupes and recipes
+- 🥤 Drink recipes
+- 📝 Shopping list functionality
+- 🎉 Party planning tools
+- And much more!
+
 ## ✨ Features
 
 - **Restaurant Dupes** - Recreate your favorite restaurant dishes at home
@@ -20,11 +34,16 @@ A college-focused recipe finder web app built with React, Chakra UI, and Framer 
 
 ## 🚀 Quick Start
 
-### Prerequisites
+### Option 1: Use the Live Website (Recommended)
+Simply visit **[https://kanjali17.github.io/studentchef](https://kanjali17.github.io/studentchef)** to start using the app immediately!
+
+### Option 2: Run Locally
+
+#### Prerequisites
 - Node.js (v16 or higher)
 - npm or yarn
 
-### Installation
+#### Installation
 
 1. **Clone the repository**
    ```bash
@@ -96,8 +115,20 @@ src/
 
 ## 🚀 Deployment
 
-The app is ready for deployment to any static hosting service:
+The app is deployed to **GitHub Pages** and is live at:
+**https://kanjali17.github.io/studentchef**
 
+### To deploy updates:
+```bash
+npm run deploy
+```
+
+This will:
+1. Build the production version
+2. Deploy to the `gh-pages` branch
+3. Make updates live on the website
+
+### Build for other platforms:
 ```bash
 npm run build
 ```
