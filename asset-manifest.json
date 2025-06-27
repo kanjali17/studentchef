@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/studentchef/static/css/main.e6c13ad2.css",
+    "main.js": "/studentchef/static/js/main.12a392e0.js",
+    "static/js/453.fe94a872.chunk.js": "/studentchef/static/js/453.fe94a872.chunk.js",
+    "index.html": "/studentchef/index.html",
+    "main.e6c13ad2.css.map": "/studentchef/static/css/main.e6c13ad2.css.map",
+    "main.12a392e0.js.map": "/studentchef/static/js/main.12a392e0.js.map",
+    "453.fe94a872.chunk.js.map": "/studentchef/static/js/453.fe94a872.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.12a392e0.js"
+  ]
+}
