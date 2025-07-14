@@ -37,6 +37,7 @@ import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { partyMenus } from '../data/partyMenus';
 import { useShoppingList } from '../context/ShoppingListContext';
+import FavoriteButton from '../components/FavoriteButton';
 
 const MotionCard = motion(Card);
 
@@ -607,9 +608,21 @@ const PartyPlanningPage: React.FC = () => {
                   <VStack align="start" spacing={3}>
                     <HStack justify="space-between" w="full">
                       <Text fontSize="2xl">{menu.image}</Text>
-                      <Badge colorScheme="purple" variant="subtle">
-                        {menu.mealType}
-                      </Badge>
+                      <HStack spacing={2}>
+                        <FavoriteButton 
+                          recipe={{
+                            id: menu.id,
+                            name: menu.name,
+                            category: 'Party Planning',
+                            description: menu.description,
+                            difficulty: menu.difficulty,
+                            cookTime: menu.time
+                          }}
+                        />
+                        <Badge colorScheme="purple" variant="subtle">
+                          {menu.mealType}
+                        </Badge>
+                      </HStack>
                     </HStack>
                     
                     <VStack align="start" spacing={1}>
@@ -670,9 +683,26 @@ const PartyPlanningPage: React.FC = () => {
         <Modal isOpen={isOpen} onClose={onClose} size="xl">
           <ModalOverlay />
           <ModalContent>
-            <ModalHeader color="purple.800">
-              {selectedMenu?.name}
-            </ModalHeader>
+                      <ModalHeader color="purple.800">
+            <HStack spacing={3}>
+              <VStack align="start" spacing={1} flex={1}>
+                <Text>{selectedMenu?.name}</Text>
+              </VStack>
+              {selectedMenu && (
+                <FavoriteButton 
+                  recipe={{
+                    id: selectedMenu.id,
+                    name: selectedMenu.name,
+                    category: 'Party Planning',
+                    description: selectedMenu.description,
+                    difficulty: selectedMenu.difficulty,
+                    cookTime: selectedMenu.time
+                  }}
+                  size="md"
+                />
+              )}
+            </HStack>
+          </ModalHeader>
             <ModalCloseButton />
             <ModalBody pb={6}>
               {selectedMenu && (
@@ -795,7 +825,24 @@ const PartyPlanningPage: React.FC = () => {
           <ModalOverlay />
           <ModalContent>
             <ModalHeader color="purple.800">
-              {selectedRecipe?.title}
+              <HStack spacing={3}>
+                <VStack align="start" spacing={1} flex={1}>
+                  <Text>{selectedRecipe?.title}</Text>
+                </VStack>
+                {selectedRecipe && (
+                  <FavoriteButton 
+                    recipe={{
+                      id: `recipe-${selectedRecipe.title}`,
+                      name: selectedRecipe.title,
+                      category: 'Party Planning',
+                      description: selectedRecipe.description,
+                      difficulty: 'Medium',
+                      cookTime: '30 min'
+                    }}
+                    size="md"
+                  />
+                )}
+              </HStack>
             </ModalHeader>
             <ModalCloseButton />
             <ModalBody pb={6}>

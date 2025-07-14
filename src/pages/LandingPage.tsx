@@ -21,7 +21,7 @@ import {
   Container,
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const MotionBox = motion(Box);
 const MotionCard = motion(Card);
@@ -417,19 +417,38 @@ const LandingPage = () => {
               <Text fontSize="lg" color="gray.600" mb={8} maxW="600px" mx="auto">
                 Join thousands of college students who are already cooking like pros and saving money while doing it!
               </Text>
-              <MotionButton
-                size="lg"
-                colorScheme="purple"
-                px={8}
-                py={6}
-                fontSize="xl"
-                borderRadius="full"
-                boxShadow="xl"
-                whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                🍴 Start Cooking Now
-              </MotionButton>
+              <HStack spacing={4} justify="center">
+                <MotionButton
+                  as={Link}
+                  to="/register"
+                  size="lg"
+                  colorScheme="purple"
+                  px={8}
+                  py={6}
+                  fontSize="xl"
+                  borderRadius="full"
+                  boxShadow="xl"
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  🍴 Sign Up Now
+                </MotionButton>
+                <MotionButton
+                  as={Link}
+                  to="/login"
+                  size="lg"
+                  variant="outline"
+                  colorScheme="purple"
+                  px={8}
+                  py={6}
+                  fontSize="xl"
+                  borderRadius="full"
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  🔑 Sign In
+                </MotionButton>
+              </HStack>
             </MotionBox>
           </Container>
         </VStack>

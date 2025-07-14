@@ -33,6 +33,7 @@ import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { recipeDatabase, drinkCategories, searchRecipes } from '../data/recipeDatabase';
 import { useShoppingList } from '../context/ShoppingListContext';
+import FavoriteButton from '../components/FavoriteButton';
 
 const MotionCard = motion(Card);
 
@@ -217,9 +218,21 @@ const DrinkDupesPage: React.FC = () => {
                 <VStack spacing={4} align="stretch">
                   <Flex justify="space-between" align="start">
                     <Text fontSize="3xl">{recipe.image}</Text>
-                    <Badge colorScheme="blue" variant="subtle">
-                      {recipe.cost}
-                    </Badge>
+                    <HStack spacing={2}>
+                      <FavoriteButton 
+                        recipe={{
+                          id: recipe.id,
+                          name: recipe.name,
+                          category: recipe.category,
+                          description: recipe.description,
+                          difficulty: recipe.difficulty,
+                          cookTime: recipe.time
+                        }}
+                      />
+                      <Badge colorScheme="blue" variant="subtle">
+                        {recipe.cost}
+                      </Badge>
+                    </HStack>
                   </Flex>
                   
                   <VStack align="start" spacing={2}>
@@ -280,12 +293,25 @@ const DrinkDupesPage: React.FC = () => {
           <ModalHeader color="blue.800">
             <HStack spacing={3}>
               <Text fontSize="2xl">{selectedRecipe?.image}</Text>
-              <VStack align="start" spacing={1}>
+              <VStack align="start" spacing={1} flex={1}>
                 <Text>{selectedRecipe?.name}</Text>
                 <Text fontSize="sm" color="gray.500" fontWeight="normal">
                   {selectedRecipe?.subcategory}
                 </Text>
               </VStack>
+              {selectedRecipe && (
+                <FavoriteButton 
+                  recipe={{
+                    id: selectedRecipe.id,
+                    name: selectedRecipe.name,
+                    category: selectedRecipe.category,
+                    description: selectedRecipe.description,
+                    difficulty: selectedRecipe.difficulty,
+                    cookTime: selectedRecipe.time
+                  }}
+                  size="md"
+                />
+              )}
             </HStack>
           </ModalHeader>
           <ModalCloseButton />

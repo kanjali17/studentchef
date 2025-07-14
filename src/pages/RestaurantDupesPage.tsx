@@ -32,6 +32,7 @@ import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { recipeDatabase, getRecipesByRestaurant, searchRecipes, restaurants } from '../data/recipeDatabase';
 import { useShoppingList } from '../context/ShoppingListContext';
+import FavoriteButton from '../components/FavoriteButton';
 
 const MotionCard = motion(Card);
 
@@ -231,9 +232,21 @@ const RestaurantDupesPage = () => {
               <CardHeader p={6}>
                 <Flex align="center" justify="space-between">
                   <Text fontSize="4xl">{recipe.image}</Text>
-                  <Badge colorScheme="orange" variant="solid">
-                    ⭐ {recipe.rating}/5
-                  </Badge>
+                  <HStack spacing={2}>
+                    <FavoriteButton 
+                      recipe={{
+                        id: recipe.id,
+                        name: recipe.name,
+                        category: recipe.category,
+                        description: recipe.description,
+                        difficulty: recipe.difficulty,
+                        cookTime: recipe.time
+                      }}
+                    />
+                    <Badge colorScheme="orange" variant="solid">
+                      ⭐ {recipe.rating}/5
+                    </Badge>
+                  </HStack>
                 </Flex>
               </CardHeader>
               
@@ -272,12 +285,25 @@ const RestaurantDupesPage = () => {
           <ModalHeader bg="orange.50" borderBottom="1px" borderColor="orange.200">
             <Flex align="center" gap={3}>
               <Text fontSize="3xl">{selectedRecipe?.image}</Text>
-              <VStack align="start" spacing={1}>
+              <VStack align="start" spacing={1} flex={1}>
                 <Heading size="lg">{selectedRecipe?.name}</Heading>
                 <Text color="gray.600" fontSize="sm">
                   {selectedRecipe?.restaurant && `Copycat of ${selectedRecipe.restaurant}`}
                 </Text>
               </VStack>
+              {selectedRecipe && (
+                <FavoriteButton 
+                  recipe={{
+                    id: selectedRecipe.id,
+                    name: selectedRecipe.name,
+                    category: selectedRecipe.category,
+                    description: selectedRecipe.description,
+                    difficulty: selectedRecipe.difficulty,
+                    cookTime: selectedRecipe.time
+                  }}
+                  size="md"
+                />
+              )}
             </Flex>
           </ModalHeader>
           

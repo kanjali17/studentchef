@@ -33,6 +33,7 @@ import {
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { Recipe, cookingMethods, getRecipesByCookingMethod } from '../data/recipeDatabase';
+import FavoriteButton from '../components/FavoriteButton';
 
 const MotionCard = motion(Card);
 const MotionButton = motion(Button);
@@ -213,11 +214,24 @@ const CookingMethodPage = () => {
                         >
                           <CardBody p={4}>
                             <VStack spacing={2} align="start">
-                              <HStack spacing={2}>
-                                <Text fontSize="lg">{recipe.image}</Text>
-                                <Text fontSize="sm" fontWeight="semibold" noOfLines={1}>
-                                  {recipe.name}
-                                </Text>
+                              <HStack spacing={2} justify="space-between" w="full">
+                                <HStack spacing={2}>
+                                  <Text fontSize="lg">{recipe.image}</Text>
+                                  <Text fontSize="sm" fontWeight="semibold" noOfLines={1}>
+                                    {recipe.name}
+                                  </Text>
+                                </HStack>
+                                <FavoriteButton 
+                                  recipe={{
+                                    id: recipe.id,
+                                    name: recipe.name,
+                                    category: recipe.category,
+                                    description: recipe.description,
+                                    difficulty: recipe.difficulty,
+                                    cookTime: recipe.time
+                                  }}
+                                  size="sm"
+                                />
                               </HStack>
                               <HStack spacing={2}>
                                 <Tag size="sm" colorScheme={selectedMethod.color}>
@@ -266,7 +280,22 @@ const CookingMethodPage = () => {
           <ModalHeader>
             <HStack spacing={4}>
               <Text fontSize="2xl">{selectedRecipe?.image}</Text>
-              <Text>{selectedRecipe?.name}</Text>
+              <VStack align="start" spacing={1} flex={1}>
+                <Text>{selectedRecipe?.name}</Text>
+              </VStack>
+              {selectedRecipe && (
+                <FavoriteButton 
+                  recipe={{
+                    id: selectedRecipe.id,
+                    name: selectedRecipe.name,
+                    category: selectedRecipe.category,
+                    description: selectedRecipe.description,
+                    difficulty: selectedRecipe.difficulty,
+                    cookTime: selectedRecipe.time
+                  }}
+                  size="md"
+                />
+              )}
             </HStack>
           </ModalHeader>
           <ModalCloseButton />
